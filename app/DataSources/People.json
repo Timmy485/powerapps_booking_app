@@ -1,0 +1,123 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr6ca_newtables",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr6ca_newtable",
+    "MaxGetRowsCount": 500,
+    "Name": "People",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr6ca_email": "Email",
+      "cr6ca_firstname": "FirstName",
+      "cr6ca_lastname": "LastName",
+      "cr6ca_newcolumn": "ID",
+      "cr6ca_newtable_AsyncOperations": "System Jobs",
+      "cr6ca_newtable_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr6ca_newtable_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr6ca_newtable_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr6ca_newtable_ProcessSession": "Process Sessions",
+      "cr6ca_newtable_SyncErrors": "Sync Errors",
+      "cr6ca_newtable1_PersonID_cr6ca_newtable": "Bookings",
+      "cr6ca_newtableid": "New table",
+      "cr6ca_password": "Password",
+      "cr6ca_phone": "Phone",
+      "cr6ca_userrole": "UserRole",
+      "cr6ca_WaitingList_cr6ca_newtable_cr6ca_ne": "Waiting Lists",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "People",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "People (Views)",
+    "Name": "_cr6ca_newtable_views",
+    "RelatedEntityName": "People",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "085cf4df-4c64-4e1a-8d01-610110d71767": "Inactive New tables",
+      "0d44548b-7048-400d-aab8-be89b210d8a2": "Active New tables",
+      "12a0e623-e773-4c4d-b0ac-a45f70801694": "New table Advanced Find View",
+      "406ad858-6460-45a3-b122-3d1637ce9101": "New table Lookup View",
+      "bf560c00-5d1a-44ee-801d-312e35ae9514": "New table Associated View"
+    }
+  },
+  {
+    "DisplayName": "UserRole (People)",
+    "Name": "cr6ca_newtable_cr6ca_userrole",
+    "OptionSetInfoNameMapping": {
+      "1": "Process Admin",
+      "2": "Booker"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr6ca_userrole",
+        "OptionSetReferenceEntityName": "People"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr6ca_userrole",
+    "RelatedEntityName": "People",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (People)",
+    "Name": "cr6ca_newtable_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "People"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "People",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (People)",
+    "Name": "cr6ca_newtable_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "People"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "People",
+    "Type": "OptionSetInfo"
+  }
+]

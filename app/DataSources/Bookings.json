@@ -1,0 +1,101 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr6ca_newtable1s",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr6ca_newtable1",
+    "MaxGetRowsCount": 500,
+    "Name": "Bookings",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr6ca_enddate": "EndDate",
+      "cr6ca_newcolumn": "ID",
+      "cr6ca_newtable1_AsyncOperations": "System Jobs",
+      "cr6ca_newtable1_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr6ca_newtable1_DuplicateBaseRecord": "Duplicate Records (cr6ca_newtable1_DuplicateBaseRecord)",
+      "cr6ca_newtable1_DuplicateMatchingRecord": "Duplicate Records (cr6ca_newtable1_DuplicateMatchingRecord)",
+      "cr6ca_newtable1_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr6ca_newtable1_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr6ca_newtable1_ProcessSession": "Process Sessions",
+      "cr6ca_newtable1_SyncErrors": "Sync Errors",
+      "cr6ca_newtable1id": "New table",
+      "cr6ca_ObjectName": "ObjectID",
+      "cr6ca_PersonID": "Person ID",
+      "cr6ca_startdate": "StartDate",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Bookings",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Bookings (Views)",
+    "Name": "_cr6ca_newtable1_views",
+    "RelatedEntityName": "Bookings",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "04d06f5c-b094-409a-a52d-696b6714307e": "New table Lookup View",
+      "47a25da9-0e09-43a4-8e70-9a614dd20f7b": "Active New tables",
+      "55a8c1b1-0aa7-4913-a36e-d17054378335": "New table Associated View",
+      "80a43ecd-3026-4989-aed6-d890d586bdd4": "Inactive New tables",
+      "e3c2131d-6ebf-49b1-97c1-4213388a5d0c": "New table Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Bookings)",
+    "Name": "cr6ca_newtable1_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Bookings"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Bookings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Bookings)",
+    "Name": "cr6ca_newtable1_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Bookings"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Bookings",
+    "Type": "OptionSetInfo"
+  }
+]

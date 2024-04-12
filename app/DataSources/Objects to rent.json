@@ -1,0 +1,122 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr6ca_objecttorents",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr6ca_objecttorent",
+    "MaxGetRowsCount": 500,
+    "Name": "Objects to rent",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr6ca_description": "Description",
+      "cr6ca_isbooked": "IsBooked",
+      "cr6ca_locations": "Locations",
+      "cr6ca_name": "Name",
+      "cr6ca_newcolumn": "ID",
+      "cr6ca_newtable1_ObjectName_cr6ca_Objectto": "Bookings",
+      "cr6ca_objecttorent_AsyncOperations": "System Jobs",
+      "cr6ca_objecttorent_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr6ca_objecttorent_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr6ca_objecttorent_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr6ca_objecttorent_ProcessSession": "Process Sessions",
+      "cr6ca_objecttorent_SyncErrors": "Sync Errors",
+      "cr6ca_objecttorentid": "Object to rent",
+      "cr6ca_WaitingList_cr6ca_Objecttorent_cr6c": "Waiting Lists",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Objects to rent",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Objects to rent (Views)",
+    "Name": "_cr6ca_objecttorent_views",
+    "RelatedEntityName": "Objects to rent",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2fb3e43b-5cf6-ee11-a1fd-000d3a4a4fcf": "Active Objects to rent (2fb3e43b-5cf6-ee11-a1fd-000d3a4a4fcf)",
+      "318752b4-9f29-4a76-93f9-de27bd53b395": "Inactive Objects to rent",
+      "79512945-07b4-4339-8171-b1bbfe8fbe6e": "Object to rent Lookup View",
+      "bda8ddbd-6f4d-486f-8bf5-a61581c50fd6": "Object to rent Advanced Find View",
+      "e83cdfd1-5c5a-4341-a138-c91020ebd410": "Active Objects to rent (e83cdfd1-5c5a-4341-a138-c91020ebd410)",
+      "f2b95f7f-c2c7-4ab7-a95f-4f8f95bd73e2": "Object to rent Associated View"
+    }
+  },
+  {
+    "DisplayName": "IsBooked (Objects to rent)",
+    "Name": "cr6ca_objecttorent_cr6ca_isbooked",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr6ca_isbooked",
+        "OptionSetReferenceEntityName": "Objects to rent"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr6ca_isbooked",
+    "RelatedEntityName": "Objects to rent",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Objects to rent)",
+    "Name": "cr6ca_objecttorent_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Objects to rent"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Objects to rent",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Objects to rent)",
+    "Name": "cr6ca_objecttorent_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Objects to rent"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Objects to rent",
+    "Type": "OptionSetInfo"
+  }
+]

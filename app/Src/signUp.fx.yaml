@@ -1,0 +1,549 @@
+signUp As screen:
+
+    Container1_2 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =768
+        Width: =0.5*Parent.Width
+        ZIndex: =1
+
+        Container3_3 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =733
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Width: =643
+            X: =20
+            Y: =18
+            ZIndex: =1
+
+            Container4_1 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =621
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Width: =308
+                X: =162
+                Y: =39
+                ZIndex: =3
+
+                Label2_1 As Label:
+                    Alignment: =Align.Center
+                    AutoHeight: =true
+                    Color: =
+                    DisplayMode: =DisplayMode.View
+                    FontSize: =20.5
+                    FontWeight: =FontWeight.Semibold
+                    Height: =73
+                    OnChange: =false
+                    Text: ="Welcome back!"
+                    TextRole: ='Label.TextRole'.Heading1
+                    Width: =308
+                    X: =0
+                    Y: =48
+                    ZIndex: =1
+
+                Form3 As form.PowerApps_CoreControls_Form:
+                    AcceptsFocus: =false
+                    DataSource: =People
+                    DefaultMode: =FormMode.New
+                    Height: =363
+                    NumberOfColumns: =1
+                    UseFluentV9Cards: =true
+                    Width: =308
+                    Y: =153
+                    ZIndex: =9
+
+                    Password_DataCard4 As typedDataCard.fluentV9TextualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr6ca_password"
+                        Default: =ThisItem.Password
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@People],DataSourceInfo.DisplayName,"cr6ca_password")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@People], DataSourceInfo.MaxLength, "cr6ca_password")
+                        Required: =false
+                        Update: =password.Value
+                        Width: =308
+                        X: =0
+                        Y: =4
+                        ZIndex: =1
+
+                        DataCardKey22 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "password As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =
+                            DisplayMode: =Parent.DisplayMode
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =true
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey22.Y + DataCardKey22.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage19 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =password.Y + password.Height
+                            ZIndex: =3
+
+                        StarVisible19 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey22.Y
+                            ZIndex: =4
+
+                    FirstName_DataCard3 As typedDataCard.fluentV9TextualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr6ca_firstname"
+                        Default: =ThisItem.FirstName
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@People],DataSourceInfo.DisplayName,"cr6ca_firstname")
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@People], DataSourceInfo.MaxLength, "cr6ca_firstname")
+                        Required: =true
+                        Update: =fname.Value
+                        Width: =308
+                        X: =0
+                        Y: =0
+                        ZIndex: =10
+
+                        DataCardKey17 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "fname As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =RGBA(255, 255, 255, 1)
+                            DisplayMode: =Parent.DisplayMode
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey17.Y + DataCardKey17.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage14 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =fname.Y + fname.Height
+                            ZIndex: =3
+
+                        StarVisible14 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey17.Y
+                            ZIndex: =4
+
+                    LastName_DataCard3 As typedDataCard.fluentV9TextualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr6ca_lastname"
+                        Default: =ThisItem.LastName
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@People],DataSourceInfo.DisplayName,"cr6ca_lastname")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@People], DataSourceInfo.MaxLength, "cr6ca_lastname")
+                        Required: =false
+                        Update: =lname.Value
+                        Width: =308
+                        X: =0
+                        Y: =1
+                        ZIndex: =10
+
+                        DataCardKey18 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "lname As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =
+                            DisplayMode: =Parent.DisplayMode
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey18.Y + DataCardKey18.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage15 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =lname.Y + lname.Height
+                            ZIndex: =3
+
+                        StarVisible15 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey18.Y
+                            ZIndex: =4
+
+                    Email_DataCard3 As typedDataCard.fluentV9TextualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr6ca_email"
+                        Default: =ThisItem.Email
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@People],DataSourceInfo.DisplayName,"cr6ca_email")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@People], DataSourceInfo.MaxLength, "cr6ca_email")
+                        Required: =true
+                        Update: =email.Value
+                        Width: =308
+                        X: =0
+                        Y: =2
+                        ZIndex: =10
+
+                        DataCardKey19 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "email As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =
+                            DisplayMode: =Parent.DisplayMode
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey19.Y + DataCardKey19.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage16 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =email.Y + email.Height
+                            ZIndex: =3
+
+                        StarVisible16 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey19.Y
+                            ZIndex: =4
+
+                    Phone_DataCard3 As typedDataCard.fluentV9TextualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr6ca_phone"
+                        Default: =ThisItem.Phone
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@People],DataSourceInfo.DisplayName,"cr6ca_phone")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@People], DataSourceInfo.MaxLength, "cr6ca_phone")
+                        Required: =false
+                        Update: =phone.Value
+                        Width: =308
+                        X: =0
+                        Y: =3
+                        ZIndex: =10
+
+                        DataCardKey20 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "phone As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =
+                            DisplayMode: =Parent.DisplayMode
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey20.Y + DataCardKey20.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage17 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =phone.Y + phone.Height
+                            ZIndex: =3
+
+                        StarVisible17 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            DisplayMode: =DisplayMode.Edit
+                            FontColor: =
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey20.Y
+                            ZIndex: =4
+
+                Group1_1 As group:
+                    Height: =5
+                    Width: =5
+                    X: =40
+                    Y: =40
+                    ZIndex: =9
+
+                    Label3_1 As Label:
+                        Alignment: =Align.Center
+                        Color: =
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =26
+                        OnChange: =false
+                        Text: ="Already have an account?"
+                        Width: =162
+                        X: =50
+                        Y: =95
+                        ZIndex: =2
+
+                    FeatureItemButton2_2 As Button:
+                        AccessibleLabel: ="Featured item button"
+                        Appearance: ='ButtonCanvas.Appearance'.Transparent
+                        BasePaletteColor: =
+                        DisplayMode: =DisplayMode.Edit
+                        FontColor: =RGBA(0, 0, 255, 1)
+                        FontSize: =13
+                        FontWeight: =FontWeight.Normal
+                        Height: =23
+                        OnSelect: =Navigate('Login Screen')
+                        Text: ="Sign in"
+                        Width: =76
+                        X: =196
+                        Y: =99
+                        ZIndex: =8
+
+                DataCardKey22_1 As Text:
+                    DisplayMode: =DisplayMode.Edit
+                    FontColor: =
+                    Height: =22
+                    Text: ="Confirm Password"
+                    Weight: ='TextCanvas.Weight'.Semibold
+                    Width: =Parent.Width - 48
+                    Wrap: =false
+                    X: =24
+                    Y: =516
+                    ZIndex: =10
+
+                "password2 As 'Text input'":
+                    AccessibleLabel: =
+                    BasePaletteColor: =
+                    DisplayMode: =Parent.DisplayMode
+                    FontColor: =
+                    Height: =32
+                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    Required: =true
+                    ValidationState: =
+                    Value: =
+                    Width: =Parent.Width - 48
+                    X: =24
+                    Y: =DataCardKey22_1.Y + DataCardKey22_1.Height + 4
+                    ZIndex: =11
+
+            ButtonCanvas3 As Button:
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =29
+                OnSelect: |-
+                    =If(
+                        IsEmpty(
+                            Filter(
+                                People,
+                                Email = email.Value
+                            )
+                        ),
+                        // Email does not exist, proceed to check passwords
+                        If(
+                            password.Value = password2.Value,
+                            // Passwords match, proceed to create account
+                            IfError(
+                                Patch(
+                                    People,
+                                    Defaults(People),
+                                    {
+                                        Email: email.Value,
+                                        Password: password.Value, 
+                                        FirstName: fname.Value,
+                                        LastName: lname.Value,
+                                        Phone: phone.Value
+                                    }
+                                ),
+                                Notify(
+                                    "Something Went Wrong, " & FirstError.Message,
+                                    NotificationType.Error
+                                ),
+                                Notify(
+                                    "Sign Up Successful.",
+                                    NotificationType.Success
+                                )
+                            ),
+                            // Passwords do not match
+                            Notify(
+                                "Passwords do not match.",
+                                NotificationType.Error
+                            )
+                        ),
+                        // Email already exists
+                        Notify(
+                            "User Already Exists.",
+                            NotificationType.Information
+                        )
+                    );
+                    
+                    Navigate(bookerLandingPage)
+                Text: ="Sign Up"
+                Width: =260
+                X: =186
+                Y: =631
+                ZIndex: =4
+
+    Container1_3 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =768
+        Width: =0.5*Parent.Width
+        X: =683
+        ZIndex: =2
+
+        Container3_4 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =733
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Width: =643
+            X: =20
+            Y: =18
+            ZIndex: =1
+
+            Image2_1 As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Height: =733
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: ='pexels-pixabay-256150'
+                ImagePosition: =ImagePosition.Fill
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =643
+                ZIndex: =1
+
