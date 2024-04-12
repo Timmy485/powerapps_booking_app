@@ -31,6 +31,7 @@
       "modifiedby": "Modified By",
       "modifiedon": "Modified On",
       "modifiedonbehalfby": "Modified By (Delegate)",
+      "msft_datastate": "msft_DataState",
       "overriddencreatedon": "Record Created On",
       "owningbusinessunit": "Owning Business Unit",
       "owningteam": "Owning Team",
@@ -55,6 +56,7 @@
       "47a25da9-0e09-43a4-8e70-9a614dd20f7b": "Active New tables",
       "55a8c1b1-0aa7-4913-a36e-d17054378335": "New table Associated View",
       "80a43ecd-3026-4989-aed6-d890d586bdd4": "Inactive New tables",
+      "9fe62ff3-c9f8-ee11-a1fe-000d3abd1f50": "display",
       "e3c2131d-6ebf-49b1-97c1-4213388a5d0c": "New table Advanced Find View"
     }
   },
@@ -95,6 +97,26 @@
     },
     "OptionSetTypeKey": "StatusType",
     "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Bookings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "DataState",
+    "Name": "msft_datastate",
+    "OptionSetInfoNameMapping": {
+      "0": "Default",
+      "1": "Retain"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "msft_datastate",
+        "OptionSetReferenceEntityName": "Bookings"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "msft_datastate",
     "RelatedEntityName": "Bookings",
     "Type": "OptionSetInfo"
   }
