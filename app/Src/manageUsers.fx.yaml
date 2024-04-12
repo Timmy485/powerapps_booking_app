@@ -84,7 +84,7 @@
                 Width: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
                 X: =0
                 Y: =0
-                ZIndex: =2
+                ZIndex: =3
 
                 ID1 As pcfDataField.textualColumn:
                     FieldDisplayName: ="ID"

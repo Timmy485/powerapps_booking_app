@@ -123,7 +123,7 @@
     "ShowStatusBar": false
   },
   "PublishInfo": {
-    "AppName": "Booking App",
+    "AppName": "Booking App Github Colab",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
@@ -137,9 +137,9 @@
     "Login Screen",
     "signUp",
     "Admin Landing Page",
-    "bookerLandingPage",
     "manageUsers",
     "allBookings",
-    "statistics"
+    "statistics",
+    "bookerLandingPage"
   ]
 }
