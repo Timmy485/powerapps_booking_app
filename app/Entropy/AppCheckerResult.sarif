@@ -94,6 +94,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "allBookings.ScreenContainer4.MainContainer4.Table3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "allBookings.ScreenContainer4.MainContainer4.Table3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "allBookings",
+                "type": "allBookings.ScreenContainer4.MainContainer4.Table3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "bookerLandingPage.ScreenContainer3.BottomContainer1.MainContainer3.Table2.AccessibleLabel"
                 }
               ],
@@ -287,36 +317,6 @@
                 "member": "AccessibleLabel",
                 "module": "signUp",
                 "type": "signUp.Container1_2.Container3_3.ButtonCanvas3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "allBookings.ScreenContainer4.MainContainer4.Table3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "allBookings.ScreenContainer4.MainContainer4.Table3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "allBookings",
-                "type": "allBookings.ScreenContainer4.MainContainer4.Table3"
               }
             }
           ],

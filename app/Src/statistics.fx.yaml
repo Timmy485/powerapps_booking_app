@@ -1,4 +1,4 @@
-"statistics As screen.'autoLayout_HeaderFooter_ver1.0'":
+statistics As screen:
 
     ScreenContainer5 As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(245, 245, 245, 1)

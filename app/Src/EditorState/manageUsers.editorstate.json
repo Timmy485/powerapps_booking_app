@@ -463,14 +463,7 @@
         "Width",
         "Height",
         "DisplayMode",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "OnSelectLogo",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "OnSelectLogo",
         "ZIndex",
         "BasePaletteColor",
         "FontColor",
@@ -603,7 +596,7 @@
         {
           "Category": "Behavior",
           "PropertyName": "OnSelectLogo",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",

@@ -252,14 +252,7 @@
         "Width",
         "Height",
         "DisplayMode",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "OnSelectLogo",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "OnSelectLogo",
         "ZIndex",
         "BasePaletteColor",
         "FontColor",
@@ -283,14 +276,7 @@
           "PropertyName": "FillPortions"
         },
         {
-          "ControlPropertyState": {
-            "AFDDataSourceName": "",
-            "AutoRuleBindingEnabled": false,
-            "AutoRuleBindingString": "",
-            "InvariantPropertyName": "AlignInContainer",
-            "IsLockable": false,
-            "NameMapSourceSchema": "?"
-          },
+          "ControlPropertyState": "AlignInContainer",
           "Property": {
             "Category": "Design",
             "PropertyName": "AlignInContainer",
@@ -399,7 +385,7 @@
         {
           "Category": "Behavior",
           "PropertyName": "OnSelectLogo",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
