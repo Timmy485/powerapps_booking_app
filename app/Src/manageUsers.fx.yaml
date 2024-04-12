@@ -37,7 +37,7 @@
                 LayoutMinHeight: =75
                 LayoutMinWidth: =Parent.Width
                 Logo: ='icons8-building-100'
-                OnSelectLogo: =false
+                OnSelectLogo: =Navigate('Admin Landing Page')
                 Title: ="All Users"
                 UserEmail: =User().Email
                 UserImage: =User().Image

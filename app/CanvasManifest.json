@@ -117,13 +117,13 @@
     "Id": "f66a4ff5-011d-47fd-8f81-0d65470605a5",
     "InstrumentationKey": "",
     "ManualOfflineProfileId": "",
-    "Name": "Booking App",
+    "Name": "Booking App Github Colab",
     "OriginatingVersion": "1.338",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
   },
   "PublishInfo": {
-    "AppName": "Booking App",
+    "AppName": "Booking App Github Colab",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
