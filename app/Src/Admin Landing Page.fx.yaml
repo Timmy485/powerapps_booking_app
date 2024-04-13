@@ -289,7 +289,41 @@
                         Height: =32
                         LayoutMinHeight: =32
                         LayoutMinWidth: =Parent.Width
-                        OnSelect: =Navigate(statistics)
+                        OnSelect: |-
+                            =ClearCollect(
+                                ColUserCountByDate,
+                                AddColumns(
+                                    GroupBy(
+                                        AddColumns(
+                                            Filter(
+                                                People,
+                                                Status = 0
+                                            ),
+                                            "DateOnly",
+                                            DateValue(
+                                                Text(
+                                                    'Created On',
+                                                    DateTimeFormat.ShortDate
+                                                )
+                                            )
+                                        ),
+                                        "DateOnly",
+                                        "PeopleGroup"
+                                    ),
+                                    "UserCount",
+                                    CountRows(PeopleGroup)
+                                )
+                            );
+                            
+                            ClearCollect(
+                                ColUserCountByDateSorted,
+                                Sort(
+                                    ColUserCountByDate,
+                                    DateOnly,
+                                    SortOrder.Ascending
+                                )
+                            );
+                            Navigate(statistics)
                         Text: ="Statistics"
                         Width: =Parent.Width
                         X: =0
