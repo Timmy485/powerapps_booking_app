@@ -106,7 +106,14 @@ statistics As screen:
                     ZIndex: =2
 
                 Label7_1 As label:
-                    Text: =CountRows(Bookings)
+                    Text: |+
+                        =CountRows(
+                            Filter(
+                                Bookings,
+                                Status = 0 
+                            )
+                        )
+                        
                     X: =10
                     Y: =40
                     ZIndex: =3
