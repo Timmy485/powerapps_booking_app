@@ -46,15 +46,101 @@ statistics As screen:
                 Y: =0
                 ZIndex: =1
 
-        MainContainer5 As groupContainer.verticalAutoLayoutContainer:
-            Fill: =RGBA(255, 255, 255, 1)
-            LayoutDirection: =LayoutDirection.Vertical
+        Container2 As groupContainer.manualLayoutContainer:
             LayoutMinHeight: =100
             LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            RadiusBottomLeft: =8
-            RadiusBottomRight: =8
-            RadiusTopLeft: =8
-            RadiusTopRight: =8
             ZIndex: =3
+
+            Container5 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Semilight
+                Height: =95
+                Width: =337
+                X: =15
+                Y: =10
+                ZIndex: =1
+
+                Label6 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Height: =32
+                    Text: ="Total Number of Users"
+                    Width: =203
+                    X: =10
+                    Y: =10
+                    ZIndex: =1
+
+                Image1 As image:
+                    Height: =95
+                    Image: ='icons8-user-100'
+                    X: =235
+                    ZIndex: =2
+
+            Label7 As label:
+                Text: |
+                    =CountRows(Filter(People, UserRole = 2))
+                X: =28
+                Y: =53
+                ZIndex: =2
+
+            Container5_1 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Semilight
+                Height: =95
+                Width: =368
+                X: =391
+                Y: =10
+                ZIndex: =3
+
+                Label6_1 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Height: =30
+                    Text: ="Total Number of Bookings"
+                    Width: =236
+                    X: =10
+                    Y: =10
+                    ZIndex: =1
+
+                Image1_1 As image:
+                    Height: =95
+                    Image: ='icons8-calender-64'
+                    ImagePosition: =ImagePosition.Center
+                    X: =268
+                    ZIndex: =2
+
+                Label7_1 As label:
+                    Text: =CountRows(Bookings)
+                    X: =10
+                    Y: =40
+                    ZIndex: =3
+
+            CompositeLineChart2 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =4
+
+                Title2 As label:
+                    Align: =Align.Center
+                    Height: =14
+                    Text: ="Chart Title"
+                    Width: =412
+                    X: =28
+                    Y: =364
+                    ZIndex: =5
+
+                LineChart2 As lineChart:
+                    Height: =222
+                    Items: =People
+                    Width: =412
+                    X: =28
+                    Y: =380
+                    ZIndex: =6
+
+                Legend2 As legend:
+                    Height: =44
+                    ItemColorSet: =LineChart2.ItemColorSet
+                    Items: =LineChart2.SeriesLabels
+                    Width: =330
+                    X: =69
+                    Y: =364
+                    ZIndex: =7
 
