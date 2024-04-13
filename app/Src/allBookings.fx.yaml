@@ -58,62 +58,72 @@
             RadiusTopRight: =8
             ZIndex: =3
 
-            Table3 As Table.pcfdataset:
-                AlignInContainer: =AlignInContainer.Stretch
-                DisplayMode: =DisplayMode.Edit
-                FillPortions: =1
-                Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
-                Items: =Bookings
-                LayoutMinHeight: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
-                LayoutMinWidth: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
-                onCellValueChange: =false
-                onFilter: =false
-                onNavigate: =false
-                onRowSelect: =false
-                onSave: =false
-                OnSelect: =false
-                Width: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
-                X: =40
-                Y: =40
-                ZIndex: =1
+    DataTable2_2 As dataTable.datatable:
+        BorderColor: =RGBA(53, 61, 63, 1)
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =644
+        Items: =Filter(Bookings, 'Bookings (Views)'.display)
+        Width: =1334
+        X: =15
+        Y: =103
+        ZIndex: =1
 
-                StartDate2 As pcfDataField.textualColumn:
-                    FieldDisplayName: ="StartDate"
-                    FieldName: ="cr6ca_startdate"
-                    FieldType: ="d"
-                    FieldVariantName: ="textualColumn"
-                    Order: =5
-                    ZIndex: =5
+        StartDate_Column2_2 As dataTableColumn.dateTimeColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="StartDate"
+            FieldName: ="cr6ca_startdate"
+            FieldVariantName: ="dateTimeColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =Text(ThisItem.StartDate,DateTimeFormat.LongDateTime)
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
 
-                EndDate2 As pcfDataField.textualColumn:
-                    FieldDisplayName: ="EndDate"
-                    FieldName: ="cr6ca_enddate"
-                    FieldType: ="d"
-                    FieldVariantName: ="textualColumn"
-                    Order: =5
-                    ZIndex: =6
+        EndDate_Column2_2 As dataTableColumn.dateTimeColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="EndDate"
+            FieldName: ="cr6ca_enddate"
+            FieldVariantName: ="dateTimeColumn"
+            Height: =670
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =Text(ThisItem.EndDate,DateTimeFormat.LongDateTime)
+            Width: =426
+            X: =0
+            Y: =0
+            ZIndex: =3
 
-                "'Created On2' As pcfDataField.textualColumn":
-                    FieldDisplayName: ="Created On"
-                    FieldName: ="createdon"
-                    FieldType: ="d"
-                    FieldVariantName: ="textualColumn"
-                    Order: =6
-                    ZIndex: =7
+        "'Person ID_Column1_2' As dataTableColumn.complexTypeColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Person"
+            FieldName: ="cr6ca_PersonID"
+            FieldVariantName: ="complexTypeColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.'Person ID'.'FirstName' & " " & ThisItem.'Person ID'.'LastName'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
 
-                ObjectID1 As pcfDataField:
-                    FieldDisplayName: ="ObjectID"
-                    FieldName: ="cr6ca_ObjectName"
-                    FieldType: ="E"
-                    FieldVariantName: ="complexTypeColumn"
-                    Order: =4
-                    ZIndex: =8
-
-                "'Person ID1' As pcfDataField":
-                    FieldDisplayName: ="Person ID"
-                    FieldName: ="cr6ca_PersonID"
-                    FieldType: ="E"
-                    FieldVariantName: ="complexTypeColumn"
-                    Order: =1
-                    ZIndex: =9
+        ObjectID_Column1_2 As dataTableColumn.complexTypeColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Item"
+            FieldName: ="cr6ca_ObjectName"
+            FieldVariantName: ="complexTypeColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.ObjectID.'Name'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
 
