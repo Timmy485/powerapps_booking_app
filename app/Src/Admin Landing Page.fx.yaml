@@ -289,7 +289,7 @@
                         Height: =32
                         LayoutMinHeight: =32
                         LayoutMinWidth: =Parent.Width
-                        OnSelect: =Navigate(statistics) 
+                        OnSelect: =Navigate(statistics)
                         Text: ="Statistics"
                         Width: =Parent.Width
                         X: =0

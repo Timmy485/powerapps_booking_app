@@ -2623,7 +2623,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Labels\":\"createdon\",\"Series1\":\"cr6ca_newcolumn\",\"Series2\":\"timezoneruleversionnumber\",\"Series3\":\"utcconversiontimezonecode\",\"Series4\":\"versionnumber\",\"Series5\":\"versionnumber\",\"Series6\":\"versionnumber\",\"Series7\":\"versionnumber\",\"Series8\":\"versionnumber\",\"Series9\":\"versionnumber\"}",
+          "NameMap": "{\"Series1\":\"UserCount\",\"Series2\":\"UserCount\",\"Series3\":\"UserCount\",\"Series4\":\"UserCount\",\"Series5\":\"UserCount\",\"Series6\":\"UserCount\",\"Series7\":\"UserCount\",\"Series8\":\"UserCount\",\"Series9\":\"UserCount\",\"Labels\":\"DateOnly\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },

@@ -136,7 +136,7 @@ statistics As screen:
 
                 LineChart2 As lineChart:
                     Height: =222
-                    Items: =People
+                    Items: =ColUserCountByDateSorted
                     Width: =412
                     X: =28
                     Y: =380

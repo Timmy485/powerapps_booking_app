@@ -5,13 +5,35 @@ App As appinfo:
             ColUserCountByDate,
             AddColumns(
                 GroupBy(
-                    People,
-                    "createdon",
+                    AddColumns(
+                        Filter(
+                            People,
+                            Status = 0
+                        ),
+                        "DateOnly",
+                        DateValue(
+                            Text(
+                                'Created On',
+                                DateTimeFormat.ShortDate
+                            )
+                        )
+                    ),
+                    "DateOnly",
                     "PeopleGroup"
                 ),
-                "Count", CountRows(PeopleGroup)
+                "UserCount",
+                CountRows(PeopleGroup)
             )
-        )
+        );
+        
+        ClearCollect(
+            ColUserCountByDateSorted,
+            Sort(
+                ColUserCountByDate,
+                DateOnly,
+                SortOrder.Ascending
+            )
+        );
     Theme: =TeamsTheme
 
     Host As hostControl.DefaultHostControlVariant:
