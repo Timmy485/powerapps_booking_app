@@ -46,33 +46,25 @@
                 Y: =0
                 ZIndex: =1
 
-        MainContainer4 As groupContainer.verticalAutoLayoutContainer:
-            Fill: =RGBA(255, 255, 255, 1)
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            RadiusBottomLeft: =8
-            RadiusBottomRight: =8
-            RadiusTopLeft: =8
-            RadiusTopRight: =8
-            ZIndex: =3
-
     DataTable2_2 As dataTable.datatable:
         BorderColor: =RGBA(53, 61, 63, 1)
         BorderStyle: =BorderStyle.Solid
+        BorderThickness: =1
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(255, 255, 255, 1)
+        HeadingColor: =RGBA(0, 0, 0, 1)
+        HeadingFill: =RGBA(91, 95, 199, 0.9)
         Height: =644
         Items: =Filter(Bookings, 'Bookings (Views)'.display)
+        SelectedFill: =RGBA(91, 95, 250, 0.5)
         Width: =1334
         X: =15
-        Y: =103
+        Y: =110
         ZIndex: =1
 
         StartDate_Column2_2 As dataTableColumn.dateTimeColumn:
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="StartDate"
+            FieldDisplayName: ="Start Date"
             FieldName: ="cr6ca_startdate"
             FieldVariantName: ="dateTimeColumn"
             Height: =Parent.Height
@@ -87,7 +79,7 @@
         EndDate_Column2_2 As dataTableColumn.dateTimeColumn:
             AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="EndDate"
+            FieldDisplayName: ="End Date"
             FieldName: ="cr6ca_enddate"
             FieldVariantName: ="dateTimeColumn"
             Height: =670
@@ -101,13 +93,13 @@
 
         "'Person ID_Column1_2' As dataTableColumn.complexTypeColumn":
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Person"
+            FieldDisplayName: ="Booker"
             FieldName: ="cr6ca_PersonID"
             FieldVariantName: ="complexTypeColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =4
-            Text: =ThisItem.'Person ID'.'FirstName' & " " & ThisItem.'Person ID'.'LastName'
+            Text: =ThisItem.'Person ID'.FirstName & " " & ThisItem.'Person ID'.LastName
             Width: =100
             X: =0
             Y: =0
@@ -121,7 +113,7 @@
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =5
-            Text: =ThisItem.ObjectID.'Name'
+            Text: =ThisItem.ObjectID.Name
             Width: =100
             X: =0
             Y: =0

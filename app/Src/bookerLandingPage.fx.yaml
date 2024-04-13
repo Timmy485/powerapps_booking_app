@@ -62,7 +62,7 @@
 
             SidebarContainer1 As groupContainer.verticalAutoLayoutContainer:
                 Fill: =RGBA(255, 255, 255, 1)
-                FillPortions: =3
+                FillPortions: =0
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
@@ -71,6 +71,7 @@
                 RadiusBottomRight: =8
                 RadiusTopLeft: =8
                 RadiusTopRight: =8
+                Width: =380
                 ZIndex: =4
 
                 Label1 As label:
@@ -115,7 +116,7 @@
                             DefaultSelectedItems: =Parent.Default
                             DisplayFields: =["cr6ca_name"]
                             DisplayMode: =Parent.DisplayMode
-                            Items: =Choices([@Bookings].cr6ca_ObjectName)
+                            Items: =Choices([@Bookings].ObjectID)
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             SearchFields: =["cr6ca_name"]
                             SearchItems: =Search(Choices([@Bookings].cr6ca_ObjectName),DataCardValue2.SearchText,"cr6ca_name")
@@ -379,10 +380,8 @@
 
             MainContainer3 As groupContainer.verticalAutoLayoutContainer:
                 Fill: =RGBA(255, 255, 255, 1)
-                FillPortions: =7
+                Height: =Parent.Height
                 LayoutDirection: =LayoutDirection.Vertical
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 RadiusBottomLeft: =8
                 RadiusBottomRight: =8
@@ -394,16 +393,20 @@
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
-        Height: =500
-        Items: =Bookings
-        Width: =900
-        X: =446
-        Y: =113
+        Height: =639
+        Items: |-
+            =Filter(
+                Bookings,
+                Value('Person ID'.ID) = Value(userID)
+            )
+        Width: =930
+        X: =415
+        Y: =110
         ZIndex: =1
 
         StartDate_Column3_1 As dataTableColumn.dateTimeColumn:
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="StartDate"
+            FieldDisplayName: ="Start Date"
             FieldName: ="cr6ca_startdate"
             FieldVariantName: ="dateTimeColumn"
             Height: =Parent.Height
@@ -418,7 +421,7 @@
         EndDate_Column3_1 As dataTableColumn.dateTimeColumn:
             AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="EndDate"
+            FieldDisplayName: ="End Date"
             FieldName: ="cr6ca_enddate"
             FieldVariantName: ="dateTimeColumn"
             Height: =640
@@ -432,13 +435,13 @@
 
         "'Person ID_Column2_1' As dataTableColumn.complexTypeColumn":
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Person ID"
+            FieldDisplayName: ="Booker"
             FieldName: ="cr6ca_PersonID"
             FieldVariantName: ="complexTypeColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =4
-            Text: =ThisItem.'Person ID'.'FirstName' & " " & ThisItem.'Person ID'.'LastName'
+            Text: =ThisItem.'Person ID'.FirstName & " " & ThisItem.'Person ID'.LastName
             Width: =160
             X: =0
             Y: =0
@@ -447,13 +450,13 @@
         ObjectID_Column2_1 As dataTableColumn.complexTypeColumn:
             AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="ObjectID"
+            FieldDisplayName: ="Item Booked"
             FieldName: ="cr6ca_ObjectName"
             FieldVariantName: ="complexTypeColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =5
-            Text: =ThisItem.ObjectID.'Name'
+            Text: =ThisItem.ObjectID.Name
             Width: =214
             X: =235
             Y: =0
@@ -461,7 +464,7 @@
 
     Button2 As button:
         Text: ="Book"
-        X: =48
-        Y: =644
+        X: =45
+        Y: =470
         ZIndex: =2
 

@@ -14,6 +14,8 @@
       "cr6ca_newcolumn": "ID",
       "cr6ca_newtable1_AsyncOperations": "System Jobs",
       "cr6ca_newtable1_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr6ca_newtable1_connections1": "Connections (cr6ca_newtable1_connections1)",
+      "cr6ca_newtable1_connections2": "Connections (cr6ca_newtable1_connections2)",
       "cr6ca_newtable1_DuplicateBaseRecord": "Duplicate Records (cr6ca_newtable1_DuplicateBaseRecord)",
       "cr6ca_newtable1_DuplicateMatchingRecord": "Duplicate Records (cr6ca_newtable1_DuplicateMatchingRecord)",
       "cr6ca_newtable1_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
@@ -53,9 +55,7 @@
     "Type": "ViewInfo",
     "ViewInfoNameMapping": {
       "04d06f5c-b094-409a-a52d-696b6714307e": "New table Lookup View",
-      "47a25da9-0e09-43a4-8e70-9a614dd20f7b": "Active New tables",
       "55a8c1b1-0aa7-4913-a36e-d17054378335": "New table Associated View",
-      "80a43ecd-3026-4989-aed6-d890d586bdd4": "Inactive New tables",
       "9fe62ff3-c9f8-ee11-a1fe-000d3abd1f50": "display",
       "e3c2131d-6ebf-49b1-97c1-4213388a5d0c": "New table Advanced Find View"
     }

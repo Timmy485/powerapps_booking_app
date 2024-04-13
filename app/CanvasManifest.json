@@ -140,7 +140,6 @@
     "manageUsers",
     "allBookings",
     "statistics",
-    "bookerLandingPage",
-    "bookerLandingPage_1"
+    "bookerLandingPage"
   ]
 }
