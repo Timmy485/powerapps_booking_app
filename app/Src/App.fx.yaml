@@ -1,5 +1,17 @@
 App As appinfo:
     BackEnabled: =true
+    OnStart: |-
+        =ClearCollect(
+            ColUserCountByDate,
+            AddColumns(
+                GroupBy(
+                    People,
+                    "createdon",
+                    "PeopleGroup"
+                ),
+                "Count", CountRows(PeopleGroup)
+            )
+        )
     Theme: =TeamsTheme
 
     Host As hostControl.DefaultHostControlVariant:
