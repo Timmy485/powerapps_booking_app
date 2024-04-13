@@ -127,27 +127,28 @@ statistics As screen:
 
                 Title2 As label:
                     Align: =Align.Center
-                    Height: =14
-                    Text: ="Chart Title"
-                    Width: =412
-                    X: =28
-                    Y: =364
+                    FontWeight: =FontWeight.Semibold
+                    Height: =20
+                    Text: ="ACCOUNT CREATION TREND"
+                    Width: =540
+                    X: =15
+                    Y: =278
                     ZIndex: =5
 
                 LineChart2 As lineChart:
-                    Height: =222
+                    Height: =322
                     Items: =ColUserCountByDateSorted
-                    Width: =412
-                    X: =28
-                    Y: =380
+                    Width: =540
+                    X: =15
+                    Y: =301
                     ZIndex: =6
 
                 Legend2 As legend:
-                    Height: =44
+                    Height: =32
                     ItemColorSet: =LineChart2.ItemColorSet
                     Items: =LineChart2.SeriesLabels
-                    Width: =330
-                    X: =69
-                    Y: =364
+                    Width: =127
+                    X: =377
+                    Y: =315
                     ZIndex: =7
 
