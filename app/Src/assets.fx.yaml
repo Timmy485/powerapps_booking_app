@@ -84,6 +84,7 @@
                     ZIndex: =1
 
                 Form2 As form.PowerApps_CoreControls_Form:
+                    AcceptsFocus: =true
                     DataSource: ='Objects to rent'
                     FillPortions: =0
                     Height: =400
