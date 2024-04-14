@@ -10,8 +10,10 @@
     "Name": "Objects to rent",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "cr6ca_address": "Address",
       "cr6ca_description": "Description",
       "cr6ca_isbooked": "IsBooked",
+      "cr6ca_location": "Location",
       "cr6ca_locations": "Locations",
       "cr6ca_name": "Name",
       "cr6ca_newcolumn": "ID",

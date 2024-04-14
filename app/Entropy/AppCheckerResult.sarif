@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 21,
-                  "charOffset": 28,
+                  "charOffset": 26,
                   "snippet": {
                     "text": "Value('Person ID'.ID)"
                   }
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 50,
+                  "charOffset": 48,
                   "snippet": {
                     "text": "="
                   }
@@ -88,6 +88,126 @@
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
           "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Login Screen'.Container1.Container3_2.Container4.emailField.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Login Screen'.Container1.Container3_2.Container4.emailField.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Login Screen",
+                "type": "'Login Screen'.Container1.Container3_2.Container4.emailField"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Login Screen'.Container1.Container3_2.Container4.passwordField.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Login Screen'.Container1.Container3_2.Container4.passwordField.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Login Screen",
+                "type": "'Login Screen'.Container1.Container3_2.Container4.passwordField"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Login Screen'.Container1.Container3_2.Container4.Button1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Login Screen'.Container1.Container3_2.Container4.Button1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Login Screen",
+                "type": "'Login Screen'.Container1.Container3_2.Container4.Button1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "manageUsers.ScreenContainer1.MainContainer1.Table1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "manageUsers.ScreenContainer1.MainContainer1.Table1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "manageUsers",
+                "type": "manageUsers.ScreenContainer1.MainContainer1.Table1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -364,19 +484,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Login Screen'.Container1.Container3_2.Container4.emailField.AccessibleLabel"
+                  "fullyQualifiedName": "assets.ScreenContainer6.BottomContainer2.MainContainer4.Table2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Login Screen'.Container1.Container3_2.Container4.emailField.AccessibleLabel",
+                  "fullyQualifiedName": "assets.ScreenContainer6.BottomContainer2.MainContainer4.Table2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Login Screen",
-                "type": "'Login Screen'.Container1.Container3_2.Container4.emailField"
+                "module": "assets",
+                "type": "assets.ScreenContainer6.BottomContainer2.MainContainer4.Table2"
               }
             }
           ],
@@ -394,79 +514,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Login Screen'.Container1.Container3_2.Container4.passwordField.AccessibleLabel"
+                  "fullyQualifiedName": "assets.ScreenContainer6.BottomContainer2.SidebarContainer2.ButtonCanvas1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Login Screen'.Container1.Container3_2.Container4.passwordField.AccessibleLabel",
+                  "fullyQualifiedName": "assets.ScreenContainer6.BottomContainer2.SidebarContainer2.ButtonCanvas1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Login Screen",
-                "type": "'Login Screen'.Container1.Container3_2.Container4.passwordField"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Login Screen'.Container1.Container3_2.Container4.Button1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Login Screen'.Container1.Container3_2.Container4.Button1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Login Screen",
-                "type": "'Login Screen'.Container1.Container3_2.Container4.Button1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "manageUsers.ScreenContainer1.MainContainer1.Table1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "manageUsers.ScreenContainer1.MainContainer1.Table1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "manageUsers",
-                "type": "manageUsers.ScreenContainer1.MainContainer1.Table1"
+                "module": "assets",
+                "type": "assets.ScreenContainer6.BottomContainer2.SidebarContainer2.ButtonCanvas1"
               }
             }
           ],

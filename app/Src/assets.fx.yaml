@@ -1,0 +1,506 @@
+"assets As screen.'autoLayout_Sidebar_ver1.0'":
+
+    ScreenContainer6 As groupContainer.verticalAutoLayoutContainer:
+        Fill: =RGBA(245, 245, 245, 1)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =16
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =16
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =16
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer6 As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =2
+
+            Header2_5 As Header:
+                AlignInContainer: =AlignInContainer.Start
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =75
+                LayoutMinHeight: =75
+                LayoutMinWidth: =Parent.Width
+                Logo: ='icons8-building-100'
+                OnSelectLogo: =Navigate('Admin Landing Page')
+                Title: ="Assets"
+                UserEmail: =User().Email
+                UserImage: =User().Image
+                UserName: =User().FullName
+                Width: =Parent.Width
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+        BottomContainer2 As groupContainer.horizontalAutoLayoutContainer:
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(245, 245, 245, 1)
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutGap: =16
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutWrap: =true
+            PaddingBottom: =2
+            PaddingLeft: =2
+            PaddingRight: =2
+            PaddingTop: =2
+            ZIndex: =3
+
+            SidebarContainer2 As groupContainer.verticalAutoLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =3
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                ZIndex: =4
+
+                Label8_1 As label:
+                    AlignInContainer: =AlignInContainer.Start
+                    FontWeight: =FontWeight.Semibold
+                    PaddingLeft: =20
+                    PaddingTop: =10
+                    Text: ="Create New Asset"
+                    Width: =200
+                    ZIndex: =1
+
+                Form2 As form.PowerApps_CoreControls_Form:
+                    DataSource: ='Objects to rent'
+                    FillPortions: =0
+                    Height: =400
+                    LayoutMinHeight: =250
+                    LayoutMinWidth: =300
+                    NumberOfColumns: =1
+                    UseFluentV9Cards: =true
+                    ZIndex: =2
+
+                    Name_DataCard1 As typedDataCard.fluentV9TextualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr6ca_name"
+                        Default: =ThisItem.Name
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'Objects to rent'],DataSourceInfo.DisplayName,"cr6ca_name")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@'Objects to rent'], DataSourceInfo.MaxLength, "cr6ca_name")
+                        Required: =false
+                        Update: =DataCardValue3.Value
+                        Width: =400
+                        X: =0
+                        Y: =0
+                        ZIndex: =3
+
+                        DataCardKey5 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue3 As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            DisplayMode: =Parent.DisplayMode
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey5.Y + DataCardKey5.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage4 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue3.Y + DataCardValue3.Height
+                            ZIndex: =3
+
+                        StarVisible4 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey5.Y
+                            ZIndex: =4
+
+                    Description_DataCard1 As typedDataCard.fluentV9TextualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr6ca_description"
+                        Default: =ThisItem.Description
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'Objects to rent'],DataSourceInfo.DisplayName,"cr6ca_description")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@'Objects to rent'], DataSourceInfo.MaxLength, "cr6ca_description")
+                        Required: =false
+                        Update: =DataCardValue4.Value
+                        Width: =400
+                        X: =0
+                        Y: =1
+                        ZIndex: =3
+
+                        DataCardKey6 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue4 As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            DisplayMode: =Parent.DisplayMode
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey6.Y + DataCardKey6.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage5 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue4.Y + DataCardValue4.Height
+                            ZIndex: =3
+
+                        StarVisible5 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey6.Y
+                            ZIndex: =4
+
+                    Location_DataCard1 As typedDataCard.fluentV9TextualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr6ca_location"
+                        Default: =ThisItem.Location
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'Objects to rent'],DataSourceInfo.DisplayName,"cr6ca_location")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@'Objects to rent'], DataSourceInfo.MaxLength, "cr6ca_location")
+                        Required: =true
+                        Update: =DataCardValue6.Value
+                        Width: =400
+                        X: =0
+                        Y: =2
+                        ZIndex: =3
+
+                        DataCardKey8 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue6 As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            DisplayMode: =Parent.DisplayMode
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey8.Y + DataCardKey8.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage7 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue6.Y + DataCardValue6.Height
+                            ZIndex: =3
+
+                        StarVisible7 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey8.Y
+                            ZIndex: =4
+
+                    Address_DataCard1 As typedDataCard.fluentV9TextualEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr6ca_address"
+                        Default: =ThisItem.Address
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'Objects to rent'],DataSourceInfo.DisplayName,"cr6ca_address")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@'Objects to rent'], DataSourceInfo.MaxLength, "cr6ca_address")
+                        Required: =false
+                        Update: =DataCardValue7.Value
+                        Width: =400
+                        X: =0
+                        Y: =3
+                        ZIndex: =3
+
+                        DataCardKey9 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue7 As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            DisplayMode: =Parent.DisplayMode
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey9.Y + DataCardKey9.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage8 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue7.Y + DataCardValue7.Height
+                            ZIndex: =3
+
+                        StarVisible8 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey9.Y
+                            ZIndex: =4
+
+                    IsBooked_DataCard1 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="cr6ca_isbooked"
+                        Default: =ThisItem.IsBooked
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'Objects to rent'],DataSourceInfo.DisplayName,"cr6ca_isbooked")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        Required: =true
+                        Update: =DataCardValue5.Selected.Value
+                        Width: =400
+                        X: =0
+                        Y: =4
+                        ZIndex: =3
+
+                        DataCardKey7 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue5 As Combobox.pcfdataset:
+                            AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                            DefaultSelectedItems: =[Parent.Default]
+                            DisplayMode: =Parent.DisplayMode
+                            Height: =32
+                            Items: =Choices('IsBooked (Objects to rent)')
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey7.Y + DataCardKey7.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage6 As Text:
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue5.Y + DataCardValue5.Height
+                            ZIndex: =3
+
+                        StarVisible6 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =20
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey7.Y
+                            ZIndex: =4
+
+                ButtonCanvas1 As Button:
+                    AlignInContainer: =AlignInContainer.Center
+                    Appearance: ='ButtonCanvas.Appearance'.Primary
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =34
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =96
+                    Text: ="Create"
+                    Width: =100
+                    X: =0
+                    Y: =0
+                    ZIndex: =3
+
+            MainContainer4 As groupContainer.verticalAutoLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =7
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                ZIndex: =5
+
+                Label8 As label:
+                    AlignInContainer: =AlignInContainer.Start
+                    FontWeight: =FontWeight.Semibold
+                    PaddingLeft: =20
+                    PaddingTop: =10
+                    Text: ="Available Assets"
+                    Width: =200
+                    ZIndex: =1
+
+                Table2 As Table.pcfdataset:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    DisplayMode: =DisplayMode.Edit
+                    FillPortions: =1
+                    Height: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+                    Items: ='Objects to rent'
+                    LayoutMinHeight: =If(Self.Y + 500 > Parent.Height, Parent.Height - Self.Y, 500)
+                    LayoutMinWidth: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
+                    onCellValueChange: =false
+                    onFilter: =false
+                    onNavigate: =false
+                    onRowSelect: =false
+                    onSave: =false
+                    OnSelect: =false
+                    ReflowBehavior: ='PowerAppsOneGrid.ReflowBehavior'.Reflow
+                    Width: =If(Self.X + 800 > Parent.Width, Parent.Width - Self.X, 800)
+                    X: =0
+                    Y: =0
+                    ZIndex: =2
+
+                    ID2 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="ID"
+                        FieldName: ="cr6ca_newcolumn"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =1
+                        ZIndex: =6
+
+                    Name1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="Name"
+                        FieldName: ="cr6ca_name"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =2
+                        ZIndex: =7
+
+                    Description1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="Description"
+                        FieldName: ="cr6ca_description"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =3
+                        ZIndex: =8
+
+                    IsBooked1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="IsBooked"
+                        FieldName: ="cr6ca_isbooked"
+                        FieldType: ="l"
+                        FieldVariantName: ="textualColumn"
+                        Order: =9
+                        ZIndex: =9
+
+                    Location1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="Location"
+                        FieldName: ="cr6ca_location"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =4
+                        ZIndex: =11
+
+                    Address1 As pcfDataField.textualColumn:
+                        FieldDisplayName: ="Address"
+                        FieldName: ="cr6ca_address"
+                        FieldType: ="s"
+                        FieldVariantName: ="textualColumn"
+                        Order: =8
+                        ZIndex: =12
+

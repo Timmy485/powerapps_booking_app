@@ -119,7 +119,7 @@
                             Items: =Choices([@Bookings].ObjectID)
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             SearchFields: =["cr6ca_name"]
-                            SearchItems: =Search(Choices([@Bookings].cr6ca_ObjectName),DataCardValue2.SearchText,"cr6ca_name")
+                            SearchItems: =Search(Choices([@Bookings].ObjectID),DataCardValue2.SearchText,"cr6ca_name")
                             SelectMultiple: =false
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
@@ -379,9 +379,12 @@
                             ZIndex: =7
 
             MainContainer3 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
                 LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 RadiusBottomLeft: =8
                 RadiusBottomRight: =8
