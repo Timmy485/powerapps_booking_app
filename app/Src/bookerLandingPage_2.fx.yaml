@@ -95,7 +95,7 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =true
-                        Update: =DataCardValue2_1.Selected
+                        Update: =DropdownCanvas1.Selected
                         Width: =400
                         X: =0
                         Y: =0
@@ -123,7 +123,7 @@
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardValue2_1.Y + DataCardValue2_1.Height
+                            Y: =DropdownCanvas1.Y + DropdownCanvas1.Height
                             ZIndex: =3
 
                         StarVisible3_2 As label:
@@ -139,7 +139,7 @@
                         DropdownCanvas1 As Dropdown.pcfdataset:
                             DisplayMode: =DisplayMode.Edit
                             Height: =32
-                            Items: ='Objects to rent'.Name
+                            Items: ='Objects to rent'.'Name'
                             Width: =320
                             X: =40
                             Y: =40
