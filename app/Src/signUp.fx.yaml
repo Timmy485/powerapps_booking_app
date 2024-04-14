@@ -477,7 +477,7 @@ signUp As screen:
                                     Defaults(People),
                                     {
                                         Email: email.Value,
-                                        Password: password.Value, 
+                                        Password: password.Value,
                                         FirstName: fname.Value,
                                         LastName: lname.Value,
                                         Phone: phone.Value
@@ -504,7 +504,6 @@ signUp As screen:
                             NotificationType.Information
                         )
                     );
-                    
                     Navigate(bookerLandingPage)
                 Text: ="Sign Up"
                 Width: =260

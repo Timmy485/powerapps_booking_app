@@ -103,7 +103,7 @@
                         Height: =70
                         MaxLength: =DataSourceInfo([@'Objects to rent'], DataSourceInfo.MaxLength, "cr6ca_name")
                         Required: =false
-                        Update: =DataCardValue3.Value
+                        Update: =name.Value
                         Width: =400
                         X: =0
                         Y: =0
@@ -120,7 +120,7 @@
                             Y: =10
                             ZIndex: =1
 
-                        "DataCardValue3 As 'Text input'":
+                        "name As 'Text input'":
                             AccessibleLabel: =Parent.DisplayName
                             DisplayMode: =Parent.DisplayMode
                             Height: =32
@@ -141,7 +141,7 @@
                             Width: =Parent.Width - 48
                             Wrap: =true
                             X: =24
-                            Y: =DataCardValue3.Y + DataCardValue3.Height
+                            Y: =name.Y + name.Height
                             ZIndex: =3
 
                         StarVisible4 As Text:
@@ -165,7 +165,7 @@
                         Height: =70
                         MaxLength: =DataSourceInfo([@'Objects to rent'], DataSourceInfo.MaxLength, "cr6ca_description")
                         Required: =false
-                        Update: =DataCardValue4.Value
+                        Update: =description.Value
                         Width: =400
                         X: =0
                         Y: =1
@@ -182,7 +182,7 @@
                             Y: =10
                             ZIndex: =1
 
-                        "DataCardValue4 As 'Text input'":
+                        "description As 'Text input'":
                             AccessibleLabel: =Parent.DisplayName
                             DisplayMode: =Parent.DisplayMode
                             Height: =32
@@ -203,7 +203,7 @@
                             Width: =Parent.Width - 48
                             Wrap: =true
                             X: =24
-                            Y: =DataCardValue4.Y + DataCardValue4.Height
+                            Y: =description.Y + description.Height
                             ZIndex: =3
 
                         StarVisible5 As Text:
@@ -227,7 +227,7 @@
                         Height: =70
                         MaxLength: =DataSourceInfo([@'Objects to rent'], DataSourceInfo.MaxLength, "cr6ca_location")
                         Required: =true
-                        Update: =DataCardValue6.Value
+                        Update: =location.Value
                         Width: =400
                         X: =0
                         Y: =2
@@ -244,7 +244,7 @@
                             Y: =10
                             ZIndex: =1
 
-                        "DataCardValue6 As 'Text input'":
+                        "location As 'Text input'":
                             AccessibleLabel: =Parent.DisplayName
                             DisplayMode: =Parent.DisplayMode
                             Height: =32
@@ -265,7 +265,7 @@
                             Width: =Parent.Width - 48
                             Wrap: =true
                             X: =24
-                            Y: =DataCardValue6.Y + DataCardValue6.Height
+                            Y: =location.Y + location.Height
                             ZIndex: =3
 
                         StarVisible7 As Text:
@@ -289,7 +289,7 @@
                         Height: =70
                         MaxLength: =DataSourceInfo([@'Objects to rent'], DataSourceInfo.MaxLength, "cr6ca_address")
                         Required: =false
-                        Update: =DataCardValue7.Value
+                        Update: =address.Value
                         Width: =400
                         X: =0
                         Y: =3
@@ -306,7 +306,7 @@
                             Y: =10
                             ZIndex: =1
 
-                        "DataCardValue7 As 'Text input'":
+                        "address As 'Text input'":
                             AccessibleLabel: =Parent.DisplayName
                             DisplayMode: =Parent.DisplayMode
                             Height: =32
@@ -327,7 +327,7 @@
                             Width: =Parent.Width - 48
                             Wrap: =true
                             X: =24
-                            Y: =DataCardValue7.Y + DataCardValue7.Height
+                            Y: =address.Y + address.Height
                             ZIndex: =3
 
                         StarVisible8 As Text:
@@ -341,66 +341,6 @@
                             Y: =DataCardKey9.Y
                             ZIndex: =4
 
-                    IsBooked_DataCard1 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
-                        BorderStyle: =BorderStyle.Solid
-                        DataField: ="cr6ca_isbooked"
-                        Default: =ThisItem.IsBooked
-                        DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Objects to rent'],DataSourceInfo.DisplayName,"cr6ca_isbooked")
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =70
-                        Required: =true
-                        Update: =DataCardValue5.Selected.Value
-                        Width: =400
-                        X: =0
-                        Y: =4
-                        ZIndex: =3
-
-                        DataCardKey7 As Text:
-                            DisplayMode: =DisplayMode.Edit
-                            Height: =22
-                            Text: =Parent.DisplayName
-                            Weight: ='TextCanvas.Weight'.Semibold
-                            Width: =Parent.Width - 48
-                            Wrap: =false
-                            X: =24
-                            Y: =10
-                            ZIndex: =1
-
-                        DataCardValue5 As Combobox.pcfdataset:
-                            AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                            DefaultSelectedItems: =[Parent.Default]
-                            DisplayMode: =Parent.DisplayMode
-                            Height: =32
-                            Items: =Choices('IsBooked (Objects to rent)')
-                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                            Width: =Parent.Width - 48
-                            X: =24
-                            Y: =DataCardKey7.Y + DataCardKey7.Height + 4
-                            ZIndex: =2
-
-                        ErrorMessage6 As Text:
-                            DisplayMode: =DisplayMode.Edit
-                            Height: =30
-                            Text: =Parent.Error
-                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                            Width: =Parent.Width - 48
-                            Wrap: =true
-                            X: =24
-                            Y: =DataCardValue5.Y + DataCardValue5.Height
-                            ZIndex: =3
-
-                        StarVisible6 As Text:
-                            Align: ='TextCanvas.Align'.Center
-                            DisplayMode: =DisplayMode.Edit
-                            Height: =20
-                            Text: ="*"
-                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                            Width: =30
-                            X: =0
-                            Y: =DataCardKey7.Y
-                            ZIndex: =4
-
                 ButtonCanvas1 As Button:
                     AlignInContainer: =AlignInContainer.Center
                     Appearance: ='ButtonCanvas.Appearance'.Primary
@@ -408,6 +348,27 @@
                     Height: =34
                     LayoutMinHeight: =32
                     LayoutMinWidth: =96
+                    OnSelect: |
+                        =IfError(
+                            Patch(
+                                'Objects to rent',
+                                Defaults('Objects to rent'),
+                                {
+                                    Name: name.Value,
+                                    Description: description.Value,
+                                    Location: location.Value,
+                                    Address: address.Value
+                                }
+                            ),
+                            Notify(
+                                "Something Went Wrong, " & FirstError.Message,
+                                NotificationType.Error
+                            ),
+                            Notify(
+                                "Added Entry Successfully",
+                                NotificationType.Success
+                            )
+                        );
                     Text: ="Create"
                     Width: =100
                     X: =0
