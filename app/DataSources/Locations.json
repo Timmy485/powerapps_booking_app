@@ -1,0 +1,97 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr6ca_locationses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr6ca_locations",
+    "Name": "Locations",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr6ca_address": "Address",
+      "cr6ca_id": "ID",
+      "cr6ca_locations_AsyncOperations": "System Jobs",
+      "cr6ca_locations_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr6ca_locations_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr6ca_locations_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr6ca_locations_ProcessSession": "Process Sessions",
+      "cr6ca_locations_SyncErrors": "Sync Errors",
+      "cr6ca_locationsid": "Locations",
+      "cr6ca_name": "Location",
+      "cr6ca_Objecttorent_cr6ca_locations_cr6ca_": "Objects to rent",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Locations",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Locations (Views)",
+    "Name": "_cr6ca_locations_views",
+    "RelatedEntityName": "Locations",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "07d25ce5-964d-4fe7-a0c4-a87c382a8b7a": "Locations Lookup View",
+      "26ea2ab9-f774-43bd-96de-c293b5288b11": "Inactive Locations",
+      "7d35ae9d-7772-4c5d-b496-d7d134051d49": "Locations Advanced Find View",
+      "ce667c6b-f163-420b-8536-40caffa14916": "Locations Associated View",
+      "fb6de086-08d1-4256-8782-9978d8abb4c6": "Active Locations"
+    }
+  },
+  {
+    "DisplayName": "Status (Locations)",
+    "Name": "cr6ca_locations_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Locations"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Locations",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Locations)",
+    "Name": "cr6ca_locations_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Locations"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Locations",
+    "Type": "OptionSetInfo"
+  }
+]
