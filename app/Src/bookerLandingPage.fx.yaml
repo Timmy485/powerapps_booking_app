@@ -377,51 +377,66 @@
             Y: =0
             ZIndex: =12
 
-    Label9 As label:
-        Text: |
-            =
-        X: =110
-        Y: =600
-        ZIndex: =3
-
     Button2_4 As button:
         OnSelect: |
-            =IfError(
-                Patch(
-                    Bookings,
-                    Defaults(Bookings),
-                    {
-                       'Person ID': currentUser,
-                       ObjectID:itemToBook.Selected,
-                       StartDate:startDate.SelectedDate,
-                       EndDate: endDate.SelectedDate
-                        
-                    }
-                ),
-                Notify(
-                    "Something Went Wrong, " & FirstError.Message,
-                    NotificationType.Error
-                ),
-                Notify(
-                    "Added Entry Successfully",
-                    NotificationType.Success
+            =Set(
+                varLocationToBook,
+                LookUp(
+                    'Objects to rent',
+                    Name = itemToBook.Selected.Name,
+                    Location
                 )
             );
-            IfError(
-                Patch(
-                    'Objects to rent',
-                    LookUp('Objects to rent', Name = itemToBook.Selected.Name),
-                    {
-                        IsBooked: true   
-                    }
+            // Define a variable to count the bookings at the same location
+            Set(
+                varCountBookingsAtLocation,
+                CountRows(
+                    Filter(
+                        Bookings,
+                        'Person ID'.ID = userID,
+                        ObjectID.Location = varLocationToBook
+                    )
+                )
+            );
+            If(
+                varCountBookingsAtLocation < 2,
+                // Attempt to add a new booking if the user has fewer than 2 active bookings at the location
+                IfError(
+                    Patch(
+                        Bookings,
+                        Defaults(Bookings),
+                        {
+                            'Person ID': currentUser,
+                            ObjectID: itemToBook.Selected,
+                            StartDate: startDate.SelectedDate,
+                            EndDate: endDate.SelectedDate
+                        }
+                    ),
+                    Notify(
+                        "Something Went Wrong, " & FirstError.Message,
+                        NotificationType.Error
+                    ),
+                    // If booking is successfully added, then update the IsBooked status
+                    IfError(
+                        Patch(
+                            'Objects to rent',
+                            LookUp('Objects to rent', ID = itemToBook.Selected.ID),
+                            {IsBooked: true}
+                        ),
+                        Notify(
+                            "Something Went Wrong updating the object status, " & FirstError.Message,
+                            NotificationType.Error
+                        ),
+                        Notify(
+                            "Object status updated successfully and booking added",
+                            NotificationType.Success
+                        )
+                    )
                 ),
+                // Notify the user if the booking limit is exceeded
                 Notify(
-                    "Something Went Wrong, " & FirstError.Message,
+                    "You cannot book more than two objects in parallel at the same location.",
                     NotificationType.Error
-                ),
-                Notify(
-                    "Added Entry Successfully",
-                    NotificationType.Success
                 )
             );
         Text: ="Book"
