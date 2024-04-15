@@ -101,7 +101,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 12,
+    "BindingErrorCount": 0,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -142,8 +142,6 @@
     "statistics",
     "assets",
     "bookerLandingPage",
-    "bookerLandingPage_3",
-    "bookerLandingPage_2",
     "bookerLandingPage_1"
   ]
 }
