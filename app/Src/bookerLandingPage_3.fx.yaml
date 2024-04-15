@@ -1,6 +1,6 @@
-"bookerLandingPage As screen.'autoLayout_Sidebar_ver1.0'":
+"bookerLandingPage_3 As screen.'autoLayout_Sidebar_ver1.0'":
 
-    ScreenContainer3 As groupContainer.verticalAutoLayoutContainer:
+    ScreenContainer3_3 As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(245, 245, 245, 1)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -14,7 +14,7 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        HeaderContainer3 As groupContainer.horizontalAutoLayoutContainer:
+        HeaderContainer3_3 As groupContainer.horizontalAutoLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: =75
@@ -27,7 +27,7 @@
             RadiusTopRight: =8
             ZIndex: =2
 
-            Header2_2 As Header:
+            Header2_8 As Header:
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 FontColor: =
@@ -46,7 +46,7 @@
                 Y: =0
                 ZIndex: =1
 
-        BottomContainer1 As groupContainer.horizontalAutoLayoutContainer:
+        BottomContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
             DropShadow: =DropShadow.None
             Fill: =RGBA(245, 245, 245, 1)
             LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -61,7 +61,7 @@
             PaddingTop: =2
             ZIndex: =3
 
-            SidebarContainer1 As groupContainer.verticalAutoLayoutContainer:
+            SidebarContainer1_3 As groupContainer.verticalAutoLayoutContainer:
                 Fill: =RGBA(255, 255, 255, 1)
                 FillPortions: =0
                 LayoutDirection: =LayoutDirection.Vertical
@@ -75,12 +75,12 @@
                 Width: =380
                 ZIndex: =4
 
-                Label1 As label:
+                Label1_3 As label:
                     PaddingLeft: =10
                     Text: ="New Booking"
                     ZIndex: =1
 
-                Form1 As form:
+                Form1_3 As form:
                     DataSource: =Bookings
                     DefaultMode: =FormMode.New
                     LayoutMinHeight: =250
@@ -88,7 +88,7 @@
                     NumberOfColumns: =1
                     ZIndex: =2
 
-                    ObjectID_DataCard1 As typedDataCard.comboBoxEditCard:
+                    ObjectID_DataCard1_3 As typedDataCard.comboBoxEditCard:
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="cr6ca_ObjectName"
                         Default: =ThisItem.ObjectID
@@ -97,13 +97,13 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =true
-                        Update: =itemToBook.Selected
+                        Update: =itemToBook_1.Selected
                         Width: =400
                         X: =0
                         Y: =0
                         ZIndex: =1
 
-                        DataCardKey4 As label:
+                        DataCardKey4_3 As label:
                             AutoHeight: =true
                             Height: =34
                             Text: ="Property to book"
@@ -113,25 +113,24 @@
                             Y: =10
                             ZIndex: =1
 
-                        itemToBook As combobox:
+                        itemToBook_1 As combobox:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DefaultSelectedItems: =Parent.Default
                             DisplayFields: =["cr6ca_newcolumn"]
                             DisplayMode: =Parent.DisplayMode
-                            Items: =Choices([@Bookings].ObjectID)
+                            Items: |
+                                =Filter([@Bookings].ObjectID, CountIf([@Bookings], ObjectID = [@Bookings].ObjectID) < 2)
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             SearchFields: =["cr6ca_newcolumn"]
-                            SearchItems: |-
-                                =Search(
-                                    Choices([@Bookings].ObjectID),itemToBook.SearchText,"cr6ca_newcolumn")
+                            SearchItems: =Search(Choices([@Bookings].ObjectID),itemToBook_1.SearchText,"cr6ca_newcolumn")
                             SelectMultiple: =false
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                            Y: =DataCardKey4_3.Y + DataCardKey4_3.Height + 5
                             ZIndex: =2
 
-                        ErrorMessage3 As label:
+                        ErrorMessage3_3 As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -143,20 +142,20 @@
                             Visible: =Parent.DisplayMode=DisplayMode.Edit
                             Width: =Parent.Width - 60
                             X: =30
-                            Y: =itemToBook.Y + itemToBook.Height
+                            Y: =itemToBook_1.Y + itemToBook_1.Height
                             ZIndex: =3
 
-                        StarVisible3 As label:
+                        StarVisible3_3 As label:
                             Align: =Align.Center
-                            Height: =DataCardKey4.Height
+                            Height: =DataCardKey4_3.Height
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: =DataCardKey4.Y
+                            Y: =DataCardKey4_3.Y
                             ZIndex: =4
 
-                    StartDate_DataCard1 As typedDataCard.dateTimeEditCard:
+                    StartDate_DataCard1_3 As typedDataCard.dateTimeEditCard:
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="cr6ca_startdate"
                         Default: =ThisItem.StartDate
@@ -165,13 +164,13 @@
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =true
-                        Update: =If(Not IsBlank(startDate.SelectedDate), startDate.SelectedDate )
+                        Update: =If(Not IsBlank(startDate_1.SelectedDate), startDate_1.SelectedDate )
                         Width: =400
                         X: =0
                         Y: =1
                         ZIndex: =3
 
-                        DataCardKey2 As label:
+                        DataCardKey2_3 As label:
                             AutoHeight: =true
                             Height: =34
                             Text: ="Start Date"
@@ -181,7 +180,7 @@
                             Y: =10
                             ZIndex: =1
 
-                        startDate As datepicker:
+                        startDate_1 As datepicker:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DefaultDate: =Parent.Default
                             DisplayMode: =Parent.DisplayMode
@@ -197,7 +196,7 @@
                             Y: =43
                             ZIndex: =2
 
-                        ErrorMessage1 As label:
+                        ErrorMessage1_3 As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -212,17 +211,17 @@
                             Y: =
                             ZIndex: =6
 
-                        StarVisible1 As label:
+                        StarVisible1_3 As label:
                             Align: =Align.Center
-                            Height: =DataCardKey2.Height
+                            Height: =DataCardKey2_3.Height
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: =DataCardKey2.Y
+                            Y: =DataCardKey2_3.Y
                             ZIndex: =7
 
-                    EndDate_DataCard1 As typedDataCard.dateTimeEditCard:
+                    EndDate_DataCard1_3 As typedDataCard.dateTimeEditCard:
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="cr6ca_enddate"
                         Default: =ThisItem.EndDate
@@ -233,15 +232,15 @@
                         Required: =true
                         Update: |-
                             =If(
-                                Not IsBlank(endDate.SelectedDate),
-                                endDate.SelectedDate
+                                Not IsBlank(endDate_1.SelectedDate),
+                                endDate_1.SelectedDate
                             )
                         Width: =400
                         X: =0
                         Y: =2
                         ZIndex: =3
 
-                        DataCardKey3 As label:
+                        DataCardKey3_3 As label:
                             AutoHeight: =true
                             Height: =34
                             Text: ="End Date"
@@ -251,7 +250,7 @@
                             Y: =10
                             ZIndex: =1
 
-                        endDate As datepicker:
+                        endDate_1 As datepicker:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DefaultDate: =Parent.Default
                             DisplayMode: =Parent.DisplayMode
@@ -267,7 +266,7 @@
                             Y: =43
                             ZIndex: =2
 
-                        ErrorMessage2 As label:
+                        ErrorMessage2_3 As label:
                             AutoHeight: =true
                             Height: =10
                             Live: =Live.Assertive
@@ -282,17 +281,17 @@
                             Y: =
                             ZIndex: =6
 
-                        StarVisible2 As label:
+                        StarVisible2_3 As label:
                             Align: =Align.Center
-                            Height: =DataCardKey3.Height
+                            Height: =DataCardKey3_3.Height
                             Text: ="*"
                             Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                             Width: =30
                             Wrap: =false
-                            Y: =DataCardKey3.Y
+                            Y: =DataCardKey3_3.Y
                             ZIndex: =7
 
-            MainContainer3 As groupContainer.verticalAutoLayoutContainer:
+            MainContainer3_3 As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
@@ -306,7 +305,7 @@
                 RadiusTopRight: =8
                 ZIndex: =5
 
-    DataTable3_1 As dataTable.datatable:
+    DataTable3_4 As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
@@ -321,7 +320,7 @@
         Y: =110
         ZIndex: =1
 
-        StartDate_Column3_1 As dataTableColumn.dateTimeColumn:
+        StartDate_Column3_4 As dataTableColumn.dateTimeColumn:
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Start Date"
             FieldName: ="cr6ca_startdate"
@@ -335,7 +334,7 @@
             Y: =0
             ZIndex: =9
 
-        EndDate_Column3_1 As dataTableColumn.dateTimeColumn:
+        EndDate_Column3_4 As dataTableColumn.dateTimeColumn:
             AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="End Date"
@@ -350,7 +349,7 @@
             Y: =0
             ZIndex: =10
 
-        "'Person ID_Column2_1' As dataTableColumn.complexTypeColumn":
+        "'Person ID_Column2_4' As dataTableColumn.complexTypeColumn":
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Booker"
             FieldName: ="cr6ca_PersonID"
@@ -364,7 +363,7 @@
             Y: =0
             ZIndex: =11
 
-        ObjectID_Column2_1 As dataTableColumn.complexTypeColumn:
+        ObjectID_Column2_4 As dataTableColumn.complexTypeColumn:
             AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Item Booked"
@@ -379,7 +378,7 @@
             Y: =0
             ZIndex: =12
 
-    Button2 As button:
+    Button2_3 As button:
         OnSelect: |
             =IfError(
                 Patch(
@@ -387,9 +386,9 @@
                     Defaults(Bookings),
                     {
                        'Person ID': currentUser,
-                       ObjectID:itemToBook.Selected,
-                       StartDate:startDate.SelectedDate,
-                       EndDate: endDate.SelectedDate
+                       ObjectID:itemToBook_1.Selected,
+                       StartDate:startDate_1.SelectedDate,
+                       EndDate: endDate_1.SelectedDate
                         
                     }
                 ),
@@ -405,7 +404,7 @@
             IfError(
                 Patch(
                     'Objects to rent',
-                    LookUp('Objects to rent', Name = itemToBook.Selected.Name),
+                    LookUp('Objects to rent', Name = itemToBook_1.Selected.Name),
                     {
                         IsBooked: true   
                     }
