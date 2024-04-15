@@ -116,13 +116,12 @@
                         itemToBook_1 As combobox:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DefaultSelectedItems: =Parent.Default
-                            DisplayFields: =["cr6ca_newcolumn"]
+                            DisplayFields: =["cr6ca_name"]
                             DisplayMode: =Parent.DisplayMode
-                            Items: |
-                                =Filter([@Bookings].ObjectID, CountIf([@Bookings], ObjectID = [@Bookings].ObjectID) < 2)
+                            Items: =([@'Objects to rent'].Name)
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                            SearchFields: =["cr6ca_newcolumn"]
-                            SearchItems: =Search(Choices([@Bookings].ObjectID),itemToBook_1.SearchText,"cr6ca_newcolumn")
+                            SearchFields: =["cr6ca_name"]
+                            SearchItems: =Search(([@'Objects to rent'].Name),itemToBook_1.SearchText,"cr6ca_name")
                             SelectMultiple: =false
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
@@ -380,13 +379,15 @@
 
     Button2_3 As button:
         OnSelect: |
-            =IfError(
+            =Set( Propertyselectedid,LookUp('Objects to rent', itemToBook_1.Selected.Name = Name , 'Objects to rent'.ID))
+            
+            IfError(
                 Patch(
                     Bookings,
                     Defaults(Bookings),
                     {
                        'Person ID': currentUser,
-                       ObjectID:itemToBook_1.Selected,
+                       ObjectID:Propertyselectedid,
                        StartDate:startDate_1.SelectedDate,
                        EndDate: endDate_1.SelectedDate
                         
