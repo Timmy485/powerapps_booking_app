@@ -8,11 +8,6 @@
       }
     },
     {
-      "Kind": "default.cds_bulkdeletefailure_forms",
-      "Namespace": "Bulk Delete Failures (Forms)",
-      "Values": {}
-    },
-    {
       "Kind": "default.cds_cr6ca_locations_forms",
       "Namespace": "Locations (Forms)",
       "Values": {
