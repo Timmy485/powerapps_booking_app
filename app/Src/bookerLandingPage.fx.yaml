@@ -84,7 +84,7 @@
                     DataSource: =Bookings
                     DefaultMode: =FormMode.New
                     LayoutMinHeight: =250
-                    LayoutMinWidth: =400
+                    LayoutMinWidth: =300
                     NumberOfColumns: =1
                     ZIndex: =2
 
