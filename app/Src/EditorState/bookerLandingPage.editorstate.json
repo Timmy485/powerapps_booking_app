@@ -3208,6 +3208,14 @@
           "InvariantPropertyName": "Logo",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "true",
+          "InvariantPropertyName": "IsProfilePictureVisible",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "DynamicProperties": [
@@ -3296,6 +3304,11 @@
           "Category": "Data",
           "PropertyName": "Logo",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "IsProfilePictureVisible",
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",

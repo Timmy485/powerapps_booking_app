@@ -32,6 +32,7 @@
                 DisplayMode: =DisplayMode.Edit
                 FontColor: =
                 Height: =75
+                IsProfilePictureVisible: =false
                 LayoutMinHeight: =75
                 LayoutMinWidth: =Parent.Width
                 Logo: ='icons8-building-100'
@@ -402,7 +403,7 @@
             IfError(
                 Patch(
                     'Objects to rent',
-                    LookUp('Objects to rent', ID = itemToBook.Selected.ID),
+                    LookUp('Objects to rent', Name = itemToBook.Selected.Name),
                     {
                         IsBooked: true   
                     }
