@@ -314,7 +314,7 @@
       "MetaDataIDKey": "",
       "Name": "Address1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1528,7 +1528,7 @@
       "MetaDataIDKey": "",
       "Name": "Description1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2577,7 +2577,7 @@
       "MetaDataIDKey": "",
       "Name": "IsBooked1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3648,7 +3648,7 @@
       "MetaDataIDKey": "",
       "Name": "Location1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4217,7 +4217,7 @@
       "MetaDataIDKey": "",
       "Name": "Name1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

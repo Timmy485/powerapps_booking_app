@@ -116,14 +116,12 @@
                         itemToBook As combobox:
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             DefaultSelectedItems: =Parent.Default
-                            DisplayFields: =["cr6ca_newcolumn"]
+                            DisplayFields: =["cr6ca_name"]
                             DisplayMode: =Parent.DisplayMode
                             Items: =Choices([@Bookings].ObjectID)
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                            SearchFields: =["cr6ca_newcolumn"]
-                            SearchItems: |-
-                                =Search(
-                                    Choices([@Bookings].ObjectID),itemToBook.SearchText,"cr6ca_newcolumn")
+                            SearchFields: =["cr6ca_name"]
+                            SearchItems: =Search(Choices([@Bookings].ObjectID),itemToBook.SearchText,"cr6ca_name")
                             SelectMultiple: =false
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
