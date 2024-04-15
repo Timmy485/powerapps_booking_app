@@ -442,7 +442,9 @@
         ZIndex: =2
 
     "TextInputCanvas1 As 'Text input'":
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        FontColor: =
         Height: =32
         Value: |-
             =//LookUp(Choices([@Bookings].ObjectID), Bookings.ObjectID =1,)

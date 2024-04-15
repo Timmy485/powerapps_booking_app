@@ -377,17 +377,25 @@
             Y: =0
             ZIndex: =12
 
-    Button2 As button:
+    Label9 As label:
+        Text: |
+            =
+        X: =110
+        Y: =600
+        ZIndex: =3
+
+    Button2_4 As button:
         OnSelect: |
             =IfError(
                 Patch(
                     Bookings,
                     Defaults(Bookings),
                     {
-                        'Person ID': currentUser,
-                        ObjectID: itemToBook.Selected,
-                        StartDate: startDate.SelectedDate,
-                        EndDate: endDate.SelectedDate
+                       'Person ID': currentUser,
+                       ObjectID:itemToBook.Selected,
+                       StartDate:startDate.SelectedDate,
+                       EndDate: endDate.SelectedDate
+                        
                     }
                 ),
                 Notify(
@@ -402,11 +410,10 @@
             IfError(
                 Patch(
                     'Objects to rent',
-                    LookUp(
-                        'Objects to rent',
-                        Name = itemToBook.Selected.Name
-                    ),
-                    {IsBooked: true}
+                    LookUp('Objects to rent', Name = itemToBook.Selected.Name),
+                    {
+                        IsBooked: true   
+                    }
                 ),
                 Notify(
                     "Something Went Wrong, " & FirstError.Message,
@@ -419,6 +426,6 @@
             );
         Text: ="Book"
         X: =125
-        Y: =475
-        ZIndex: =2
+        Y: =530
+        ZIndex: =4
 

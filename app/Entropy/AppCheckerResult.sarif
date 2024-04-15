@@ -94,785 +94,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "bookerLandingPage.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 360,
-                  "snippet": {
-                    "text": "Value('Person ID'.ID)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "bookerLandingPage",
-                "type": "bookerLandingPage.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Value"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage.Button2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage.Button2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 382,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "bookerLandingPage",
-                "type": "bookerLandingPage.Button2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "itemToBook_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "itemToBook_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 12,
-                  "snippet": {
-                    "text": ".Selected"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.ErrorMessage3_1.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.ErrorMessage3_1.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "itemToBook_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.ErrorMessage3_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "itemToBook_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.ErrorMessage3_1.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.ErrorMessage3_1.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 12,
-                  "snippet": {
-                    "text": ".Y"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.ErrorMessage3_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.ErrorMessage3_1.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.ErrorMessage3_1.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 17,
-                  "snippet": {
-                    "text": "itemToBook_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.ErrorMessage3_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "itemToBook_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.ErrorMessage3_1.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.ErrorMessage3_1.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 29,
-                  "snippet": {
-                    "text": ".Height"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.ErrorMessage3_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 15,
-                  "snippet": {
-                    "text": "startDate_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "startDate_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 26,
-                  "snippet": {
-                    "text": ".SelectedDate"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 33,
-                  "charOffset": 7,
-                  "snippet": {
-                    "text": "IsBlank(startDate_1.SelectedDate)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "IsBlank"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 42,
-                  "snippet": {
-                    "text": "startDate_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "startDate_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 53,
-                  "snippet": {
-                    "text": ".SelectedDate"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 68,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "If(Not IsBlank(startDate_1.SelectedDate), startDate_1.SelectedDate )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": "endDate_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "endDate_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 29,
-                  "snippet": {
-                    "text": ".SelectedDate"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 31,
-                  "charOffset": 12,
-                  "snippet": {
-                    "text": "IsBlank(endDate_1.SelectedDate)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "IsBlank"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 49,
-                  "snippet": {
-                    "text": "endDate_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "endDate_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 58,
-                  "snippet": {
-                    "text": ".SelectedDate"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1.Update"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1.Update",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 73,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "If(\n    Not IsBlank(endDate_1.SelectedDate),\n    endDate_1.SelectedDate\n)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Update",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "bookerLandingPage_1.DataTable3_2.Items"
                 }
               ],
@@ -953,39 +174,39 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect"
+                  "fullyQualifiedName": "bookerLandingPage_2.ScreenContainer3_2.BottomContainer1_2.SidebarContainer1_2.Form1_2.ObjectID_DataCard1_2.itemToBook_1.SearchItems"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect",
+                  "fullyQualifiedName": "bookerLandingPage_2.ScreenContainer3_2.BottomContainer1_2.SidebarContainer1_2.Form1_2.ObjectID_DataCard1_2.itemToBook_1.SearchItems",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 12,
-                  "charOffset": 133,
+                  "charOffset": 132,
                   "snippet": {
-                    "text": "itemToBook_1"
+                    "text": ""
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.Button2_1"
+                "member": "SearchItems",
+                "module": "bookerLandingPage_2",
+                "type": "bookerLandingPage_2.ScreenContainer3_2.BottomContainer1_2.SidebarContainer1_2.Form1_2.ObjectID_DataCard1_2.itemToBook_1"
               }
             }
           ],
           "message": {
             "arguments": [
-              "itemToBook_1"
+              "Eof",
+              "ParenClose"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidName",
+          "ruleId": "app-ErrExpectedFound-Ex-Fnd",
           "ruleIndex": 1
         },
         {
@@ -993,36 +214,40 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect"
+                  "fullyQualifiedName": "bookerLandingPage_2.ScreenContainer3_2.BottomContainer1_2.SidebarContainer1_2.Form1_2.ObjectID_DataCard1_2.itemToBook_1.SearchItems"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect",
+                  "fullyQualifiedName": "bookerLandingPage_2.ScreenContainer3_2.BottomContainer1_2.SidebarContainer1_2.Form1_2.ObjectID_DataCard1_2.itemToBook_1.SearchItems",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 9,
-                  "charOffset": 145,
+                  "charLength": 1,
+                  "charOffset": 6,
                   "snippet": {
-                    "text": ".Selected"
+                    "text": "("
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.Button2_1"
+                "member": "SearchItems",
+                "module": "bookerLandingPage_2",
+                "type": "bookerLandingPage_2.ScreenContainer3_2.BottomContainer1_2.SidebarContainer1_2.Form1_2.ObjectID_DataCard1_2.itemToBook_1"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "1",
+              "3"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidDot",
+          "ruleId": "app-ErrBadArityMinimum",
           "ruleIndex": 2
         },
         {
@@ -1030,143 +255,106 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect"
+                  "fullyQualifiedName": "bookerLandingPage_2.DataTable3_3.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect",
+                  "fullyQualifiedName": "bookerLandingPage_2.DataTable3_3.Items",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 11,
-                  "charOffset": 177,
+                  "charLength": 21,
+                  "charOffset": 26,
                   "snippet": {
-                    "text": "startDate_1"
+                    "text": "Value('Person ID'.ID)"
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.Button2_1"
+                "member": "Items",
+                "module": "bookerLandingPage_2",
+                "type": "bookerLandingPage_2.DataTable3_3"
               }
             }
           ],
           "message": {
             "arguments": [
-              "startDate_1"
+              "Value"
             ],
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Medium"
           },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect"
+                  "fullyQualifiedName": "bookerLandingPage_2.DataTable3_3.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect",
+                  "fullyQualifiedName": "bookerLandingPage_2.DataTable3_3.Items",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 13,
-                  "charOffset": 188,
+                  "charLength": 1,
+                  "charOffset": 48,
                   "snippet": {
-                    "text": ".SelectedDate"
+                    "text": "="
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.Button2_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 223,
-                  "snippet": {
-                    "text": "endDate_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.Button2_1"
+                "member": "Items",
+                "module": "bookerLandingPage_2",
+                "type": "bookerLandingPage_2.DataTable3_3"
               }
             }
           ],
           "message": {
             "arguments": [
-              "endDate_1"
+              "Filter"
             ],
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Medium"
           },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect"
+                  "fullyQualifiedName": "bookerLandingPage_3.TextInputCanvas1.Value"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect",
+                  "fullyQualifiedName": "bookerLandingPage_3.TextInputCanvas1.Value",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 13,
-                  "charOffset": 232,
+                  "charLength": 3,
+                  "charOffset": 125,
                   "snippet": {
-                    "text": ".SelectedDate"
+                    "text": "Set"
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.Button2_1"
+                "member": "Value",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.TextInputCanvas1"
               }
             }
           ],
@@ -1176,47 +364,7 @@
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 261,
-                  "charOffset": 13,
-                  "snippet": {
-                    "text": "Patch(\n        Bookings,\n        Defaults(Bookings),\n        {\n           'Person ID': currentUser,\n           ObjectID:itemToBook_1.Selected,\n           StartDate:startDate_1.SelectedDate,\n           EndDate: endDate_1.SelectedDate\n            \n        }\n    )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.Button2_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Patch"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleId": "app-ErrOperatorExpected",
           "ruleIndex": 3
         },
         {
@@ -1224,81 +372,40 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect"
+                  "fullyQualifiedName": "bookerLandingPage_3.TextInputCanvas1.Value"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect",
+                  "fullyQualifiedName": "bookerLandingPage_3.TextInputCanvas1.Value",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 194,
-                  "charOffset": 74,
+                  "charLength": 1,
+                  "charOffset": 149,
                   "snippet": {
-                    "text": "{\n           'Person ID': currentUser,\n           ObjectID:itemToBook_1.Selected,\n           StartDate:startDate_1.SelectedDate,\n           EndDate: endDate_1.SelectedDate\n            \n        }"
+                    "text": ","
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.Button2_1"
+                "member": "Value",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.TextInputCanvas1"
               }
             }
           ],
           "message": {
             "arguments": [
-              "cr6ca_ObjectName",
-              "Record",
-              "Error"
+              "Comma",
+              "ParenClose"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrTypeError-Arg-Expected-Found",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 559,
-                  "snippet": {
-                    "text": "itemToBook_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.Button2_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "itemToBook_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
+          "ruleId": "app-ErrExpectedFound-Ex-Fnd",
           "ruleIndex": 1
         },
         {
@@ -1306,26 +413,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect"
+                  "fullyQualifiedName": "bookerLandingPage_3.TextInputCanvas1.Value"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect",
+                  "fullyQualifiedName": "bookerLandingPage_3.TextInputCanvas1.Value",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 9,
-                  "charOffset": 571,
+                  "charLength": 1,
+                  "charOffset": 149,
                   "snippet": {
-                    "text": ".Selected"
+                    "text": ","
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.Button2_1"
+                "member": "Value",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.TextInputCanvas1"
               }
             }
           ],
@@ -1335,71 +442,74 @@
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
+          "ruleId": "app-ErrBadToken",
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect"
+                  "fullyQualifiedName": "bookerLandingPage_3.TextInputCanvas1.Value"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect",
+                  "fullyQualifiedName": "bookerLandingPage_3.TextInputCanvas1.Value",
                   "relativeAddress": 0
                 },
                 "region": {
                   "charLength": 5,
-                  "charOffset": 580,
+                  "charOffset": 117,
                   "snippet": {
                     "text": ".Name"
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.Button2_1"
+                "member": "Value",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.TextInputCanvas1"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "Name"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect"
+                  "fullyQualifiedName": "bookerLandingPage_3.TextInputCanvas1.Value"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "bookerLandingPage_1.Button2_1.OnSelect",
+                  "fullyQualifiedName": "bookerLandingPage_3.TextInputCanvas1.Value",
                   "relativeAddress": 0
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 557,
+                  "charOffset": 94,
                   "snippet": {
                     "text": "="
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
-                "module": "bookerLandingPage_1",
-                "type": "bookerLandingPage_1.Button2_1"
+                "member": "Value",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.TextInputCanvas1"
               }
             }
           ],
@@ -1414,6 +524,46 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.TextInputCanvas1.Value"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.TextInputCanvas1.Value",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 130,
+                  "snippet": {
+                    "text": "varExistingBookings"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Value",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.TextInputCanvas1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varExistingBookings"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
           "ruleIndex": 5
         },
         {
@@ -1421,19 +571,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "signUp.Container1_2.Container3_3.Container4_1.password2.AccessibleLabel"
+                  "fullyQualifiedName": "bookerLandingPage_3.TextInputCanvas1.Value"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "signUp.Container1_2.Container3_3.Container4_1.password2.AccessibleLabel",
+                  "fullyQualifiedName": "bookerLandingPage_3.TextInputCanvas1.Value",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 125,
+                  "snippet": {
+                    "text": "Set"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "signUp",
-                "type": "signUp.Container1_2.Container3_3.Container4_1.password2"
+                "member": "Value",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.TextInputCanvas1"
               }
             }
           ],
@@ -1441,9 +598,87 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-ErrOperatorExpected",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 510,
+                  "snippet": {
+                    "text": ";"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrOperatorExpected",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 220,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Record",
+              "Record"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 6
         },
         {
@@ -1451,29 +686,40 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "signUp.Container1_2.Container3_3.ButtonCanvas3.AccessibleLabel"
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "signUp.Container1_2.Container3_3.ButtonCanvas3.AccessibleLabel",
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 276,
+                  "snippet": {
+                    "text": "="
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "signUp",
-                "type": "signUp.Container1_2.Container3_3.ButtonCanvas3"
+                "member": "Items",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "Text",
+              "Record"
+            ],
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 6
         },
         {
@@ -1481,29 +727,120 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assets.ScreenContainer6.BottomContainer2.SidebarContainer2.ButtonCanvas1.AccessibleLabel"
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assets.ScreenContainer6.BottomContainer2.SidebarContainer2.ButtonCanvas1.AccessibleLabel",
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 278,
+                  "snippet": {
+                    "text": "ObjectID"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "assets",
-                "type": "assets.ScreenContainer6.BottomContainer2.SidebarContainer2.ButtonCanvas1"
+                "member": "Items",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "ObjectID"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 17,
+                  "charOffset": 300,
+                  "snippet": {
+                    "text": "varLocationToBook"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "varLocationToBook"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 298,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 6
         },
         {
@@ -1511,19 +848,66 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assets.ScreenContainer6.BottomContainer2.MainContainer4.Table2.AccessibleLabel"
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assets.ScreenContainer6.BottomContainer2.MainContainer4.Table2.AccessibleLabel",
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 11,
+                  "charOffset": 208,
+                  "snippet": {
+                    "text": "'Person ID'"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "assets",
-                "type": "assets.ScreenContainer6.BottomContainer2.MainContainer4.Table2"
+                "member": "Items",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Person ID"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 382,
+                  "charOffset": 128,
+                  "snippet": {
+                    "text": "Set (Existing,\n    CountRows(\n        Filter(\n            Bookings,\n            'Person ID' = currentUser,\n            LookUp('Objects to rent', ID = ObjectID, Location) = varLocationToBook,\n            (StartDate <= endDate.SelectedDate && EndDate >= startDate.SelectedDate) || \n            (StartDate <= startDate.SelectedDate && EndDate >= endDate.SelectedDate)\n        )\n    )\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2"
               }
             }
           ],
@@ -1531,9 +915,90 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-ErrBehaviorPropertyExpected",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 16,
+                  "charOffset": 550,
+                  "snippet": {
+                    "text": "ExistingBookings"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ExistingBookings"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 567,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 6
         },
         {
@@ -1541,19 +1006,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.ObjectID_DataCard1.itemToBook.AccessibleLabel"
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.ObjectID_DataCard1.itemToBook.AccessibleLabel",
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.Items",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 510,
+                  "snippet": {
+                    "text": ";"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "bookerLandingPage",
-                "type": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.ObjectID_DataCard1.itemToBook"
+                "member": "Items",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2"
               }
             }
           ],
@@ -1561,69 +1033,291 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleId": "app-ErrOperatorExpected",
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.StartDate_DataCard1.startDate.AccessibleLabel"
+                  "fullyQualifiedName": "bookerLandingPage_3.DataTable3_4.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.StartDate_DataCard1.startDate.AccessibleLabel",
+                  "fullyQualifiedName": "bookerLandingPage_3.DataTable3_4.Items",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 21,
+                  "charOffset": 26,
+                  "snippet": {
+                    "text": "Value('Person ID'.ID)"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "bookerLandingPage",
-                "type": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.StartDate_DataCard1.startDate"
+                "member": "Items",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.DataTable3_4"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "Value"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.EndDate_DataCard1.endDate.AccessibleLabel"
+                  "fullyQualifiedName": "bookerLandingPage_3.DataTable3_4.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.EndDate_DataCard1.endDate.AccessibleLabel",
+                  "fullyQualifiedName": "bookerLandingPage_3.DataTable3_4.Items",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 48,
+                  "snippet": {
+                    "text": "="
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "bookerLandingPage",
-                "type": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.EndDate_DataCard1.endDate"
+                "member": "Items",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.DataTable3_4"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "Filter"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.Button2_3.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.Button2_3.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 261,
+                  "charOffset": 13,
+                  "snippet": {
+                    "text": "Patch(\n        Bookings,\n        Defaults(Bookings),\n        {\n           'Person ID': currentUser,\n           ObjectID:itemToBook_2.Selected,\n           StartDate:startDate_2.SelectedDate,\n           EndDate: endDate_2.SelectedDate\n            \n        }\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.Button2_3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Patch"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.Button2_3.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.Button2_3.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 194,
+                  "charOffset": 74,
+                  "snippet": {
+                    "text": "{\n           'Person ID': currentUser,\n           ObjectID:itemToBook_2.Selected,\n           StartDate:startDate_2.SelectedDate,\n           EndDate: endDate_2.SelectedDate\n            \n        }"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.Button2_3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Record"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadSchema-ExpectedType",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.Button2_3.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.Button2_3.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 194,
+                  "charOffset": 74,
+                  "snippet": {
+                    "text": "{\n           'Person ID': currentUser,\n           ObjectID:itemToBook_2.Selected,\n           StartDate:startDate_2.SelectedDate,\n           EndDate: endDate_2.SelectedDate\n            \n        }"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.Button2_3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Owner",
+              "Polymorphic"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrColumnMissing-ColName-ExpectedType",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.Button2_3.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.Button2_3.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 580,
+                  "snippet": {
+                    "text": ".Name"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.Button2_3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Name"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.Button2_3.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.Button2_3.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 557,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.Button2_3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 6
         },
         {
@@ -1654,7 +1348,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1684,7 +1378,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1714,7 +1408,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1744,7 +1438,427 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "signUp.Container1_2.Container3_3.Container4_1.password2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "signUp.Container1_2.Container3_3.Container4_1.password2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "signUp",
+                "type": "signUp.Container1_2.Container3_3.Container4_1.password2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "signUp.Container1_2.Container3_3.ButtonCanvas3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "signUp.Container1_2.Container3_3.ButtonCanvas3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "signUp",
+                "type": "signUp.Container1_2.Container3_3.ButtonCanvas3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "assets.ScreenContainer6.BottomContainer2.SidebarContainer2.ButtonCanvas1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "assets.ScreenContainer6.BottomContainer2.SidebarContainer2.ButtonCanvas1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "assets",
+                "type": "assets.ScreenContainer6.BottomContainer2.SidebarContainer2.ButtonCanvas1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "assets.ScreenContainer6.BottomContainer2.MainContainer4.Table2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "assets.ScreenContainer6.BottomContainer2.MainContainer4.Table2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "assets",
+                "type": "assets.ScreenContainer6.BottomContainer2.MainContainer4.Table2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.ObjectID_DataCard1.itemToBook.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.ObjectID_DataCard1.itemToBook.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "bookerLandingPage",
+                "type": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.ObjectID_DataCard1.itemToBook"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.StartDate_DataCard1.startDate.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.StartDate_DataCard1.startDate.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "bookerLandingPage",
+                "type": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.StartDate_DataCard1.startDate"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.EndDate_DataCard1.endDate.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.EndDate_DataCard1.endDate.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "bookerLandingPage",
+                "type": "bookerLandingPage.ScreenContainer3.BottomContainer1.SidebarContainer1.Form1.EndDate_DataCard1.endDate"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_2.ScreenContainer3_2.BottomContainer1_2.SidebarContainer1_2.Form1_2.ObjectID_DataCard1_2.itemToBook_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_2.ScreenContainer3_2.BottomContainer1_2.SidebarContainer1_2.Form1_2.ObjectID_DataCard1_2.itemToBook_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "bookerLandingPage_2",
+                "type": "bookerLandingPage_2.ScreenContainer3_2.BottomContainer1_2.SidebarContainer1_2.Form1_2.ObjectID_DataCard1_2.itemToBook_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_2.ScreenContainer3_2.BottomContainer1_2.SidebarContainer1_2.Form1_2.StartDate_DataCard1_2.startDate_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_2.ScreenContainer3_2.BottomContainer1_2.SidebarContainer1_2.Form1_2.StartDate_DataCard1_2.startDate_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "bookerLandingPage_2",
+                "type": "bookerLandingPage_2.ScreenContainer3_2.BottomContainer1_2.SidebarContainer1_2.Form1_2.StartDate_DataCard1_2.startDate_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_2.ScreenContainer3_2.BottomContainer1_2.SidebarContainer1_2.Form1_2.EndDate_DataCard1_2.endDate_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_2.ScreenContainer3_2.BottomContainer1_2.SidebarContainer1_2.Form1_2.EndDate_DataCard1_2.endDate_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "bookerLandingPage_2",
+                "type": "bookerLandingPage_2.ScreenContainer3_2.BottomContainer1_2.SidebarContainer1_2.Form1_2.EndDate_DataCard1_2.endDate_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.TextInputCanvas1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.TextInputCanvas1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.TextInputCanvas1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.ObjectID_DataCard1_3.itemToBook_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.StartDate_DataCard1_3.startDate_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.StartDate_DataCard1_3.startDate_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.StartDate_DataCard1_3.startDate_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.EndDate_DataCard1_3.endDate_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.EndDate_DataCard1_3.endDate_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "bookerLandingPage_3",
+                "type": "bookerLandingPage_3.ScreenContainer3_3.BottomContainer1_3.SidebarContainer1_3.Form1_3.EndDate_DataCard1_3.endDate_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -1774,7 +1888,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1804,7 +1918,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 7
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -1834,7 +1948,127 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 7
+          "ruleIndex": 13
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.Update"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.Update",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Update",
+                "module": "bookerLandingPage_1",
+                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 14
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.ErrorMessage3_1.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.ErrorMessage3_1.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "bookerLandingPage_1",
+                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.ObjectID_DataCard1_1.ErrorMessage3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 14
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1.Update"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1.Update",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Update",
+                "module": "bookerLandingPage_1",
+                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.StartDate_DataCard1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 14
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1.Update"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1.Update",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Update",
+                "module": "bookerLandingPage_1",
+                "type": "bookerLandingPage_1.ScreenContainer3_1.BottomContainer1_1.SidebarContainer1_1.Form1_1.EndDate_DataCard1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 14
         }
       ],
       "tool": {
@@ -1862,6 +2096,71 @@
               }
             },
             {
+              "id": "app-ErrExpectedFound-Ex-Fnd",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unexpected characters. The formula contains '{0}' where '{1}' is expected."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or replace the unexpected characters with an expected character."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrBadArityMinimum",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid number of arguments: received {0}, expected {1} or more."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrOperatorExpected",
+              "messageStrings": {
+                "issue": {
+                  "text": "Expected operator. We expect an operator such as +, *, or & at this point in the formula."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Edit your formula so that it includes an operator between the operands."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrBadToken",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unexpected characters. Characters are used in the formula in an unexpected way."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or replace the unexpected characters."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
               "id": "app-ErrInvalidName",
               "messageStrings": {
                 "issue": {
@@ -1879,14 +2178,54 @@
               }
             },
             {
-              "id": "app-ErrInvalidDot",
+              "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
               "messageStrings": {
                 "issue": {
-                  "text": "Invalid use of '.'"
+                  "text": "Incompatible types for comparison. These types can't be compared: {0}, {1}."
                 }
               },
               "properties": {
                 "componentType": "app",
+                "howToFix": [
+                  "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
+                  "If you’re comparing records or tables, the field or column types must match exactly."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+              "messageStrings": {
+                "issue": {
+                  "text": "Delegation warning. The highlighted part of this formula might not work correctly with column \"{0}\" on large data sets."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
+                  "Try simplifying the formula.",
+                  "Try moving your data to a different data source."
+                ],
+                "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrBehaviorPropertyExpected",
+              "messageStrings": {
+                "issue": {
+                  "text": "Behavior function in a non-behavior property. You can't use this property to change values elsewhere in the app."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Move the behavior function to a behavior-based property."
+                ],
                 "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
@@ -1907,10 +2246,10 @@
               }
             },
             {
-              "id": "app-ErrTypeError-Arg-Expected-Found",
+              "id": "app-ErrBadSchema-ExpectedType",
               "messageStrings": {
                 "issue": {
-                  "text": "The type of this argument '{0}' does not match the expected type '{1}'. Found type '{2}'."
+                  "text": "Invalid argument type. Expecting a {0} value, but of a different schema."
                 }
               },
               "properties": {
@@ -1921,17 +2260,16 @@
               }
             },
             {
-              "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
+              "id": "app-ErrColumnMissing-ColName-ExpectedType",
               "messageStrings": {
                 "issue": {
-                  "text": "Incompatible types for comparison. These types can't be compared: {0}, {1}."
+                  "text": "Missing column. Your formula is missing a column '{0}' with a type of '{1}'."
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
-                  "If you’re comparing records or tables, the field or column types must match exactly."
+                  "Add a column to your formula."
                 ],
                 "level": "High",
                 "primaryCategory": "formula",
@@ -1970,6 +2308,23 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "This media file is not referenced by any control formulas so it is not needed. Removing it will improve performance."
+              }
+            },
+            {
+              "id": "app-InefficientDelayLoading",
+              "messageStrings": {
+                "issue": {
+                  "text": "Inefficient delay loading"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Use variables, collections, and navigation context to share state across screens instead."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "Controls that reference controls on other screens can slow down app loading and navigation. Doing this may force the app to load the other screens immediately, rather than waiting until the user navigates to that screen."
               }
             }
           ],
