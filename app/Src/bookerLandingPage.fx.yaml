@@ -379,7 +379,20 @@
 
     Button2 As button:
         OnSelect: |
-            =IfError(
+            =// Set a variable to count existing bookings at the same location and time period
+            Set(varExistingBookings,
+                CountRows(
+                    Filter(
+                        Bookings,
+                        Value('Person ID'.ID) = Value(userID),
+                        Location = itemToBook.Selected.,
+                        StartDate <= endDate.SelectedDate,
+                        EndDate >= startDate.SelectedDate
+                    )
+                )
+            );
+            
+            IfError(
                 Patch(
                     Bookings,
                     Defaults(Bookings),
