@@ -378,79 +378,43 @@
             ZIndex: =12
 
     Button2 As button:
-        OnSelect: |-
-            =// Retrieve the location of the object the user wants to book
-            Set(
-                varLocationToBook,
-                LookUp(
-                    'Objects to rent',
-                    ID = itemToBook.Selected.ID,
-                    Location
-                )
-            );
-            
-            // Count the number of existing bookings for the same user and location
-            Set(
-                varExistingBookings,
-                CountRows(
-                    Filter(
-                        Bookings,
-                        Value('Person ID'.ID) = Value(userID),
-                        LookUp(
-                            'Objects to rent',
-                            ID = ObjectID.ID,
-                            Location
-                        ) = varLocationToBook,
-                        (StartDate <= endDate.SelectedDate && EndDate >= startDate.SelectedDate) || (StartDate <= startDate.SelectedDate && EndDate >= endDate.SelectedDate)
-                    )
-                )
-            );
-            // Check if the current booking exceeds the limit
-            If(
-                varExistingBookings <= 2,
-                // If not, proceed to book
-                IfError(
-                    Patch(
-                        Bookings,
-                        Defaults(Bookings),
-                        {
-                            'Person ID': currentUser,
-                            ObjectID: itemToBook.Selected,
-                            StartDate: startDate.SelectedDate,
-                            EndDate: endDate.SelectedDate
-                        }
-                    ),
-                    Notify(
-                        "Something Went Wrong, " & FirstError.Message,
-                        NotificationType.Error
-                    ),
-                    Notify(
-                        "Added Entry Successfully",
-                        NotificationType.Success
-                    ),
-                    // Also, update the isBooked status of the object to true
-                    IfError(
-                        Patch(
-                            'Objects to rent',
-                            LookUp('Objects to rent', ID = itemToBook.Selected.ID),
-                            {
-                                IsBooked: true
-                            }
-                        ),
-                        Notify(
-                            "Something Went Wrong updating the object status, " & FirstError.Message,
-                            NotificationType.Error
-                        ),
-                        Notify(
-                            "Object status updated successfully",
-                            NotificationType.Success
-                        )
-                    )
+        OnSelect: |
+            =IfError(
+                Patch(
+                    Bookings,
+                    Defaults(Bookings),
+                    {
+                        'Person ID': currentUser,
+                        ObjectID: itemToBook.Selected,
+                        StartDate: startDate.SelectedDate,
+                        EndDate: endDate.SelectedDate
+                    }
                 ),
-                // If the booking exceeds the limit, notify the user
                 Notify(
-                    "You can only book up to two objects in parallel at the same location.",
+                    "Something Went Wrong, " & FirstError.Message,
                     NotificationType.Error
+                ),
+                Notify(
+                    "Added Entry Successfully",
+                    NotificationType.Success
+                )
+            );
+            IfError(
+                Patch(
+                    'Objects to rent',
+                    LookUp(
+                        'Objects to rent',
+                        Name = itemToBook.Selected.Name
+                    ),
+                    {IsBooked: true}
+                ),
+                Notify(
+                    "Something Went Wrong, " & FirstError.Message,
+                    NotificationType.Error
+                ),
+                Notify(
+                    "Added Entry Successfully",
+                    NotificationType.Success
                 )
             );
         Text: ="Book"
