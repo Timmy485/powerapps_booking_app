@@ -8,13 +8,6 @@
       }
     },
     {
-      "Kind": "default.cds_cr6ca_locations_forms",
-      "Namespace": "Locations (Forms)",
-      "Values": {
-        "Information": "e223ee01-6f4e-46b6-b6ed-be02da3f9d64"
-      }
-    },
-    {
       "Kind": "default.cds_cr6ca_objecttorent_forms",
       "Namespace": "Objects to rent (Forms)",
       "Values": {

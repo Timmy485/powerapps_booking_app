@@ -440,14 +440,6 @@
                     Y: =0
                     ZIndex: =2
 
-                    ID2 As pcfDataField.textualColumn:
-                        FieldDisplayName: ="ID"
-                        FieldName: ="cr6ca_newcolumn"
-                        FieldType: ="s"
-                        FieldVariantName: ="textualColumn"
-                        Order: =1
-                        ZIndex: =6
-
                     Name1 As pcfDataField.textualColumn:
                         FieldDisplayName: ="Name"
                         FieldName: ="cr6ca_name"

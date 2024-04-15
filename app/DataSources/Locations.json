@@ -6,7 +6,6 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr6ca_locations",
-    "MaxGetRowsCount": 500,
     "Name": "Locations",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
