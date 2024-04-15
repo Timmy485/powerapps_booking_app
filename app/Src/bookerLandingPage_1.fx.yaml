@@ -113,22 +113,6 @@
                             Y: =10
                             ZIndex: =1
 
-                        itemToBook_1 As combobox:
-                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            DefaultSelectedItems: =Parent.Default
-                            DisplayFields: =["cr6ca_name"]
-                            DisplayMode: =Parent.DisplayMode
-                            Items: =Choices([@Bookings].ObjectID)
-                            PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                            SearchFields: =["cr6ca_name"]
-                            SearchItems: =Search(Choices([@Bookings].ObjectID),itemToBook_1.SearchText,"cr6ca_name")
-                            SelectMultiple: =false
-                            Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardKey4_1.Y + DataCardKey4_1.Height + 5
-                            ZIndex: =2
-
                         ErrorMessage3_1 As label:
                             AutoHeight: =true
                             Height: =10
@@ -178,22 +162,6 @@
                             X: =30
                             Y: =10
                             ZIndex: =1
-
-                        startDate_1 As datepicker:
-                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            DefaultDate: =Parent.Default
-                            DisplayMode: =Parent.DisplayMode
-                            EndYear: =Year(Today())+100
-                            Height: =45
-                            IsEditable: =true
-                            PaddingBottom: =0
-                            PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                            StartYear: =1899
-                            Tooltip: =Parent.DisplayName
-                            Width: =340
-                            X: =30
-                            Y: =43
-                            ZIndex: =2
 
                         ErrorMessage1_1 As label:
                             AutoHeight: =true
@@ -248,22 +216,6 @@
                             X: =30
                             Y: =10
                             ZIndex: =1
-
-                        endDate_1 As datepicker:
-                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            DefaultDate: =Parent.Default
-                            DisplayMode: =Parent.DisplayMode
-                            EndYear: =Year(Today())+100
-                            Height: =45
-                            IsEditable: =true
-                            PaddingBottom: =0
-                            PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                            StartYear: =1899
-                            Tooltip: =Parent.DisplayName
-                            Width: =340
-                            X: =30
-                            Y: =43
-                            ZIndex: =2
 
                         ErrorMessage2_1 As label:
                             AutoHeight: =true
