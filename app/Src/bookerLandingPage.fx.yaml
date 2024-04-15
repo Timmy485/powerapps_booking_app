@@ -81,6 +81,7 @@
 
                 Form1 As form:
                     DataSource: =Bookings
+                    DefaultMode: =FormMode.New
                     LayoutMinHeight: =250
                     LayoutMinWidth: =400
                     NumberOfColumns: =1
@@ -376,7 +377,7 @@
             ZIndex: =12
 
     Button2 As button:
-        OnSelect: |-
+        OnSelect: |
             =IfError(
                 Patch(
                     Bookings,
@@ -384,9 +385,26 @@
                     {
                        'Person ID': currentUser,
                        ObjectID:itemToBook.Selected,
-                       StartDate:startDate,
-                       EndDate: endDate
+                       StartDate:startDate.SelectedDate,
+                       EndDate: endDate.SelectedDate
                         
+                    }
+                ),
+                Notify(
+                    "Something Went Wrong, " & FirstError.Message,
+                    NotificationType.Error
+                ),
+                Notify(
+                    "Added Entry Successfully",
+                    NotificationType.Success
+                )
+            );
+            IfError(
+                Patch(
+                    'Objects to rent',
+                    LookUp('Objects to rent', ID = itemToBook.Selected.ID),
+                    {
+                        IsBooked: true   
                     }
                 ),
                 Notify(
