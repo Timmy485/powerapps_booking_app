@@ -10,6 +10,7 @@
     "Name": "Bookings",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "cr6ca_bookingstatus": "Booking Status",
       "cr6ca_enddate": "EndDate",
       "cr6ca_newcolumn": "ID",
       "cr6ca_newtable1_AsyncOperations": "System Jobs",
@@ -59,6 +60,26 @@
       "9fe62ff3-c9f8-ee11-a1fe-000d3abd1f50": "display",
       "e3c2131d-6ebf-49b1-97c1-4213388a5d0c": "New table Advanced Find View"
     }
+  },
+  {
+    "DisplayName": "Booking Status (Bookings)",
+    "Name": "cr6ca_newtable1_cr6ca_bookingstatus",
+    "OptionSetInfoNameMapping": {
+      "0": "Pending",
+      "1": "Approved"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr6ca_bookingstatus",
+        "OptionSetReferenceEntityName": "Bookings"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr6ca_bookingstatus",
+    "RelatedEntityName": "Bookings",
+    "Type": "OptionSetInfo"
   },
   {
     "DisplayName": "Status (Bookings)",

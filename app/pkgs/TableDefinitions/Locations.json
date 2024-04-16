@@ -3,6 +3,10 @@
   "EntityName": "Locations",
   "environmentVariableName": "",
   "InstanceUrl": "https://org99352517.crm4.dynamics.com/",
+  "LocalReferenceDSJson": {
+    "entitySetName": "cr6ca_locationses",
+    "logicalName": "cr6ca_locations"
+  },
   "state": "Configured",
   "TableDefinition": {
     "BooleanOptionSetAttribute": "{\"@odata.context\":\"https://org99352517.crm4.dynamics.com/api/data/v9.0/$metadata#EntityDefinitions('cr6ca_locations')/Attributes/Microsoft.Dynamics.CRM.BooleanAttributeMetadata(MetadataId,LogicalName,SchemaName,DisplayName,OptionSet())\",\"value\":[]}",

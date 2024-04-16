@@ -1,0 +1,99 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr6ca_waitinglists",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr6ca_waitinglist",
+    "Name": "Waiting Lists",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr6ca_dateadded": "Date added",
+      "cr6ca_newcolumn": "ID",
+      "cr6ca_newtable": "Person",
+      "cr6ca_Objecttorent": "Object to rent",
+      "cr6ca_waitinglist_AsyncOperations": "System Jobs",
+      "cr6ca_waitinglist_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr6ca_waitinglist_DuplicateBaseRecord": "Duplicate Records (cr6ca_waitinglist_DuplicateBaseRecord)",
+      "cr6ca_waitinglist_DuplicateMatchingRecord": "Duplicate Records (cr6ca_waitinglist_DuplicateMatchingRecord)",
+      "cr6ca_waitinglist_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr6ca_waitinglist_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr6ca_waitinglist_ProcessSession": "Process Sessions",
+      "cr6ca_waitinglist_SyncErrors": "Sync Errors",
+      "cr6ca_waitinglistid": "Waiting List",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Waiting Lists",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Waiting Lists (Views)",
+    "Name": "_cr6ca_waitinglist_views",
+    "RelatedEntityName": "Waiting Lists",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "49894cb1-0bc2-45bc-af25-6dad714a975c": "Waiting List Advanced Find View",
+      "5e9a10ea-6083-4666-9021-a578437fc0c9": "Waiting List Lookup View",
+      "6bcb9f1b-19bb-444e-a2bf-055923907da4": "Waiting List Associated View",
+      "978774b5-4d6e-44b6-b4a4-a9ddd46be296": "Active Waiting Lists",
+      "dd2436ae-5e9e-4f4e-8e39-9d61f417f123": "Inactive Waiting Lists"
+    }
+  },
+  {
+    "DisplayName": "Status (Waiting Lists)",
+    "Name": "cr6ca_waitinglist_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Waiting Lists"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Waiting Lists",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Waiting Lists)",
+    "Name": "cr6ca_waitinglist_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Waiting Lists"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Waiting Lists",
+    "Type": "OptionSetInfo"
+  }
+]

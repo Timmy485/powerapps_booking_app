@@ -399,44 +399,68 @@
                 )
             );
             If(
-                varCountBookingsAtLocation < 2,
-                // Attempt to add a new booking if the user has fewer than 2 active bookings at the location
+                LookUp('Objects to rent', ID = itemToBook.Selected.ID).IsBooked = false,
+                // If the item is not booked, check if the user has fewer than 2 bookings at the location
+                If(
+                    varCountBookingsAtLocation < 2,
+                    // Proceed to add a new booking
+                    IfError(
+                        Patch(
+                            Bookings,
+                            Defaults(Bookings),
+                            {
+                                'Person ID': currentUser,
+                                ObjectID: itemToBook.Selected,
+                                StartDate: startDate.SelectedDate,
+                                EndDate: endDate.SelectedDate
+                            }
+                        ),
+                        Notify(
+                            "Something Went Wrong, " & FirstError.Message,
+                            NotificationType.Error
+                        ),
+                        // If booking is successfully added, then update the IsBooked status
+                        IfError(
+                            Patch(
+                                'Objects to rent',
+                                LookUp('Objects to rent', ID = itemToBook.Selected.ID),
+                                {IsBooked: true}
+                            ),
+                            Notify(
+                                "Something Went Wrong updating the object status, " & FirstError.Message,
+                                NotificationType.Error
+                            ),
+                            Notify(
+                                "Object status updated successfully and booking added",
+                                NotificationType.Success
+                            )
+                        )
+                    ),
+                    // Notify the user if the booking limit is exceeded
+                    Notify(
+                        "You cannot book more than two objects in parallel at the same location.",
+                        NotificationType.Error
+                    )
+                ),
+                // If the item is already booked, add the user to the waiting list
                 IfError(
                     Patch(
-                        Bookings,
-                        Defaults(Bookings),
+                        'Waiting Lists',
+                        Defaults('Waiting Lists'),
                         {
-                            'Person ID': currentUser,
-                            ObjectID: itemToBook.Selected,
-                            StartDate: startDate.SelectedDate,
-                            EndDate: endDate.SelectedDate
+                            Person: currentUser,
+                            'Object to rent': itemToBook.Selected,
+                            'Date added': Now()
                         }
                     ),
                     Notify(
                         "Something Went Wrong, " & FirstError.Message,
                         NotificationType.Error
                     ),
-                    // If booking is successfully added, then update the IsBooked status
-                    IfError(
-                        Patch(
-                            'Objects to rent',
-                            LookUp('Objects to rent', ID = itemToBook.Selected.ID),
-                            {IsBooked: true}
-                        ),
-                        Notify(
-                            "Something Went Wrong updating the object status, " & FirstError.Message,
-                            NotificationType.Error
-                        ),
-                        Notify(
-                            "Object status updated successfully and booking added",
-                            NotificationType.Success
-                        )
+                    Notify(
+                        "The object is already booked. You have been added to the waiting list.",
+                        NotificationType.Success
                     )
-                ),
-                // Notify the user if the booking limit is exceeded
-                Notify(
-                    "You cannot book more than two objects in parallel at the same location.",
-                    NotificationType.Error
                 )
             );
         Text: ="Book"
