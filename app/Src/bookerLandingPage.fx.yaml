@@ -435,7 +435,7 @@
                                 'Objects to rent',
                                 LookUp(
                                     'Objects to rent',
-                                    ID = itemToBook.Selected.ID
+                                    Name = itemToBook.Selected.Name
                                 ),
                                 {IsBooked: true}
                             ),
