@@ -398,8 +398,18 @@
                     )
                 )
             );
+            
+            // Retrieve the IsBooked status of the item to be booked
+            Set(
+                varIsBooked,
+                LookUp(
+                    'Objects to rent',
+                    Name = itemToBook.Selected.Name,
+                    IsBooked
+                )
+            );
             If(
-                LookUp('Objects to rent', ID = itemToBook.Selected.ID).IsBooked = false,
+                varIsBooked = false,
                 // If the item is not booked, check if the user has fewer than 2 bookings at the location
                 If(
                     varCountBookingsAtLocation < 2,
@@ -423,7 +433,10 @@
                         IfError(
                             Patch(
                                 'Objects to rent',
-                                LookUp('Objects to rent', ID = itemToBook.Selected.ID),
+                                LookUp(
+                                    'Objects to rent',
+                                    ID = itemToBook.Selected.ID
+                                ),
                                 {IsBooked: true}
                             ),
                             Notify(
