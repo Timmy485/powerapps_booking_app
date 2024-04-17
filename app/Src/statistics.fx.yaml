@@ -74,18 +74,18 @@ statistics As screen:
                     X: =235
                     ZIndex: =2
 
-            Label7 As label:
-                Text: |
-                    =CountRows(Filter(People, UserRole = 2))
-                X: =28
-                Y: =53
-                ZIndex: =2
+                Label7 As label:
+                    Text: |
+                        =CountRows(Filter(People, UserRole = 2))
+                    X: =10
+                    Y: =42
+                    ZIndex: =3
 
             Container5_1 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.Semilight
                 Height: =95
                 Width: =368
-                X: =391
+                X: =433
                 Y: =10
                 ZIndex: =3
 
@@ -151,4 +151,41 @@ statistics As screen:
                     X: =377
                     Y: =315
                     ZIndex: =7
+
+            Container5_2 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Semilight
+                Height: =95
+                Width: =406
+                X: =883
+                Y: =10
+                ZIndex: =8
+
+                Label6_2 As label:
+                    FontWeight: =FontWeight.Semibold
+                    Height: =30
+                    Text: ="Total Bookings on Waiting List"
+                    Width: =267
+                    X: =22
+                    Y: =10
+                    ZIndex: =1
+
+                Image1_2 As image:
+                    Height: =95
+                    Image: ='icons8-calender-64'
+                    ImagePosition: =ImagePosition.Center
+                    X: =304
+                    ZIndex: =2
+
+                Label7_2 As label:
+                    Text: |+
+                        =CountRows(
+                            Filter(
+                                'Waiting Lists',
+                                Status = 0 
+                            )
+                        )
+                        
+                    X: =22
+                    Y: =40
+                    ZIndex: =3
 
