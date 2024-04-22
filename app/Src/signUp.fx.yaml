@@ -504,7 +504,7 @@ signUp As screen:
                             NotificationType.Information
                         )
                     );
-                    Navigate(bookerLandingPage);
+                    Navigate('Login Screen');
                     ResetForm(Form3);
                     Reset(password2);
                 Text: ="Sign Up"
