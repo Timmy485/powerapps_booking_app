@@ -10,7 +10,7 @@ App As appinfo:
                             People,
                             Status = 0
                         ),
-                        "DateOnly",
+                        DateOnly,
                         DateValue(
                             Text(
                                 'Created On',
@@ -18,10 +18,10 @@ App As appinfo:
                             )
                         )
                     ),
-                    "DateOnly",
-                    "PeopleGroup"
+                    DateOnly,
+                    PeopleGroup
                 ),
-                "UserCount",
+                UserCount,
                 CountRows(PeopleGroup)
             )
         );

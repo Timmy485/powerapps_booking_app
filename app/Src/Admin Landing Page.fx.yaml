@@ -300,7 +300,7 @@
                                                 People,
                                                 Status = 0
                                             ),
-                                            "DateOnly",
+                                            DateOnly,
                                             DateValue(
                                                 Text(
                                                     'Created On',
@@ -308,10 +308,10 @@
                                                 )
                                             )
                                         ),
-                                        "DateOnly",
-                                        "PeopleGroup"
+                                        DateOnly,
+                                        PeopleGroup
                                     ),
-                                    "UserCount",
+                                    UserCount,
                                     CountRows(PeopleGroup)
                                 )
                             );
@@ -430,4 +430,15 @@
                         X: =0
                         Y: =0
                         ZIndex: =22
+
+    Label9_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =30
+        OnSelect: =Navigate('Login Screen')
+        Text: ="Sign Out"
+        Width: =84
+        X: =1184
+        Y: =40
+        ZIndex: =2
 

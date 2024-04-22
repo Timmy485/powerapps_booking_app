@@ -62,10 +62,10 @@ signUp As screen:
                         DataField: ="cr6ca_password"
                         Default: =ThisItem.Password
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@People],DataSourceInfo.DisplayName,"cr6ca_password")
+                        DisplayName: =DataSourceInfo([@People],DataSourceInfo.DisplayName,cr6ca_password)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =70
-                        MaxLength: =DataSourceInfo([@People], DataSourceInfo.MaxLength, "cr6ca_password")
+                        MaxLength: =DataSourceInfo([@People], DataSourceInfo.MaxLength, cr6ca_password)
                         Required: =false
                         Update: =password.Value
                         Width: =308
@@ -129,10 +129,10 @@ signUp As screen:
                         DataField: ="cr6ca_firstname"
                         Default: =ThisItem.FirstName
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@People],DataSourceInfo.DisplayName,"cr6ca_firstname")
+                        DisplayName: =DataSourceInfo([@People],DataSourceInfo.DisplayName,cr6ca_firstname)
                         Fill: =RGBA(255, 255, 255, 1)
                         Height: =70
-                        MaxLength: =DataSourceInfo([@People], DataSourceInfo.MaxLength, "cr6ca_firstname")
+                        MaxLength: =DataSourceInfo([@People], DataSourceInfo.MaxLength, cr6ca_firstname)
                         Required: =true
                         Update: =fname.Value
                         Width: =308
@@ -196,10 +196,10 @@ signUp As screen:
                         DataField: ="cr6ca_lastname"
                         Default: =ThisItem.LastName
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@People],DataSourceInfo.DisplayName,"cr6ca_lastname")
+                        DisplayName: =DataSourceInfo([@People],DataSourceInfo.DisplayName,cr6ca_lastname)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =70
-                        MaxLength: =DataSourceInfo([@People], DataSourceInfo.MaxLength, "cr6ca_lastname")
+                        MaxLength: =DataSourceInfo([@People], DataSourceInfo.MaxLength, cr6ca_lastname)
                         Required: =false
                         Update: =lname.Value
                         Width: =308
@@ -263,10 +263,10 @@ signUp As screen:
                         DataField: ="cr6ca_email"
                         Default: =ThisItem.Email
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@People],DataSourceInfo.DisplayName,"cr6ca_email")
+                        DisplayName: =DataSourceInfo([@People],DataSourceInfo.DisplayName,cr6ca_email)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =70
-                        MaxLength: =DataSourceInfo([@People], DataSourceInfo.MaxLength, "cr6ca_email")
+                        MaxLength: =DataSourceInfo([@People], DataSourceInfo.MaxLength, cr6ca_email)
                         Required: =true
                         Update: =email.Value
                         Width: =308
@@ -330,10 +330,10 @@ signUp As screen:
                         DataField: ="cr6ca_phone"
                         Default: =ThisItem.Phone
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@People],DataSourceInfo.DisplayName,"cr6ca_phone")
+                        DisplayName: =DataSourceInfo([@People],DataSourceInfo.DisplayName,cr6ca_phone)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =70
-                        MaxLength: =DataSourceInfo([@People], DataSourceInfo.MaxLength, "cr6ca_phone")
+                        MaxLength: =DataSourceInfo([@People], DataSourceInfo.MaxLength, cr6ca_phone)
                         Required: =false
                         Update: =phone.Value
                         Width: =308
@@ -504,7 +504,9 @@ signUp As screen:
                             NotificationType.Information
                         )
                     );
-                    Navigate(bookerLandingPage)
+                    Navigate(bookerLandingPage);
+                    ResetForm(Form3);
+                    Reset(password2);
                 Text: ="Sign Up"
                 Width: =260
                 X: =186

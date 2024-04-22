@@ -134,6 +134,8 @@
                                 Navigate(bookerLandingPage)
                             )
                         );
+                        Reset(emailField);
+                        Reset(passwordField);
                     Text: ="Sign in"
                     Width: =308
                     X: =0

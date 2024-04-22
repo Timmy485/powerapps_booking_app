@@ -93,7 +93,7 @@
                         DataField: ="cr6ca_ObjectName"
                         Default: =ThisItem.ObjectID
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@Bookings],DataSourceInfo.DisplayName,"cr6ca_ObjectName")
+                        DisplayName: =DataSourceInfo([@Bookings],DataSourceInfo.DisplayName,cr6ca_ObjectName)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =true
@@ -121,7 +121,7 @@
                             Items: =Choices([@Bookings].ObjectID)
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             SearchFields: =["cr6ca_name"]
-                            SearchItems: =Search(Choices([@Bookings].ObjectID),itemToBook.SearchText,"cr6ca_name")
+                            SearchItems: =Search(Choices([@Bookings].ObjectID),itemToBook.SearchText,cr6ca_name)
                             SelectMultiple: =false
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
@@ -159,7 +159,7 @@
                         DataField: ="cr6ca_startdate"
                         Default: =ThisItem.StartDate
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@Bookings],DataSourceInfo.DisplayName,"cr6ca_startdate")
+                        DisplayName: =DataSourceInfo([@Bookings],DataSourceInfo.DisplayName,cr6ca_startdate)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =true
@@ -225,7 +225,7 @@
                         DataField: ="cr6ca_enddate"
                         Default: =ThisItem.EndDate
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@Bookings],DataSourceInfo.DisplayName,"cr6ca_enddate")
+                        DisplayName: =DataSourceInfo([@Bookings],DataSourceInfo.DisplayName,cr6ca_enddate)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =50
                         Required: =true

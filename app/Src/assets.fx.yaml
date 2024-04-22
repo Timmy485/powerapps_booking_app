@@ -86,6 +86,7 @@
                 Form2 As form.PowerApps_CoreControls_Form:
                     AcceptsFocus: =true
                     DataSource: ='Objects to rent'
+                    DefaultMode: =FormMode.New
                     FillPortions: =0
                     Height: =400
                     LayoutMinHeight: =250
@@ -99,10 +100,10 @@
                         DataField: ="cr6ca_name"
                         Default: =ThisItem.Name
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Objects to rent'],DataSourceInfo.DisplayName,"cr6ca_name")
+                        DisplayName: =DataSourceInfo([@'Objects to rent'],DataSourceInfo.DisplayName,cr6ca_name)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =70
-                        MaxLength: =DataSourceInfo([@'Objects to rent'], DataSourceInfo.MaxLength, "cr6ca_name")
+                        MaxLength: =DataSourceInfo([@'Objects to rent'], DataSourceInfo.MaxLength, cr6ca_name)
                         Required: =false
                         Update: =name.Value
                         Width: =400
@@ -166,10 +167,10 @@
                         DataField: ="cr6ca_description"
                         Default: =ThisItem.Description
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Objects to rent'],DataSourceInfo.DisplayName,"cr6ca_description")
+                        DisplayName: =DataSourceInfo([@'Objects to rent'],DataSourceInfo.DisplayName,cr6ca_description)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =70
-                        MaxLength: =DataSourceInfo([@'Objects to rent'], DataSourceInfo.MaxLength, "cr6ca_description")
+                        MaxLength: =DataSourceInfo([@'Objects to rent'], DataSourceInfo.MaxLength, cr6ca_description)
                         Required: =false
                         Update: =description.Value
                         Width: =400
@@ -233,10 +234,10 @@
                         DataField: ="cr6ca_location"
                         Default: =ThisItem.Location
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Objects to rent'],DataSourceInfo.DisplayName,"cr6ca_location")
+                        DisplayName: =DataSourceInfo([@'Objects to rent'],DataSourceInfo.DisplayName,cr6ca_location)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =70
-                        MaxLength: =DataSourceInfo([@'Objects to rent'], DataSourceInfo.MaxLength, "cr6ca_location")
+                        MaxLength: =DataSourceInfo([@'Objects to rent'], DataSourceInfo.MaxLength, cr6ca_location)
                         Required: =true
                         Update: =location.Value
                         Width: =400
@@ -300,10 +301,10 @@
                         DataField: ="cr6ca_address"
                         Default: =ThisItem.Address
                         DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@'Objects to rent'],DataSourceInfo.DisplayName,"cr6ca_address")
+                        DisplayName: =DataSourceInfo([@'Objects to rent'],DataSourceInfo.DisplayName,cr6ca_address)
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =70
-                        MaxLength: =DataSourceInfo([@'Objects to rent'], DataSourceInfo.MaxLength, "cr6ca_address")
+                        MaxLength: =DataSourceInfo([@'Objects to rent'], DataSourceInfo.MaxLength, cr6ca_address)
                         Required: =false
                         Update: =address.Value
                         Width: =400

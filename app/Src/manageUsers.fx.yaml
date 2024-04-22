@@ -86,14 +86,6 @@
                 Y: =0
                 ZIndex: =3
 
-                ID1 As pcfDataField.textualColumn:
-                    FieldDisplayName: ="ID"
-                    FieldName: ="cr6ca_newcolumn"
-                    FieldType: ="s"
-                    FieldVariantName: ="textualColumn"
-                    Order: =1
-                    ZIndex: =12
-
                 UserRole1 As pcfDataField.textualColumn:
                     FieldDisplayName: ="UserRole"
                     FieldName: ="cr6ca_userrole"
