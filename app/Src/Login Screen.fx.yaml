@@ -151,13 +151,14 @@
 
                     Label3 As Label:
                         Alignment: =Align.Center
+                        AutoHeight: =true
                         Color: =
                         DisplayMode: =DisplayMode.Edit
                         Height: =27
                         OnChange: =false
                         Text: ="Don't have an account yet?" 
                         Width: =176
-                        X: =34
+                        X: =66
                         Y: =118
                         ZIndex: =2
 
@@ -173,8 +174,8 @@
                         OnSelect: =Navigate(signUp)
                         Text: ="Sign up"
                         Width: =76
-                        X: =197
-                        Y: =122
+                        X: =116
+                        Y: =147
                         ZIndex: =8
 
     Container1_1 As groupContainer.manualLayoutContainer:

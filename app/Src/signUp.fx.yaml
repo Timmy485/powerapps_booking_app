@@ -92,6 +92,7 @@ signUp As screen:
                             FontColor: =
                             Height: =32
                             Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Placeholder: ="Enter your password"
                             Required: =true
                             ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                             Value: =
@@ -159,6 +160,7 @@ signUp As screen:
                             FontColor: =
                             Height: =32
                             Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Placeholder: ="John"
                             Required: =Parent.Required
                             ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                             Value: =Parent.Default
@@ -226,6 +228,7 @@ signUp As screen:
                             FontColor: =
                             Height: =32
                             Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Placeholder: ="Doe"
                             Required: =Parent.Required
                             ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                             Value: =Parent.Default
@@ -293,6 +296,7 @@ signUp As screen:
                             FontColor: =
                             Height: =32
                             Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Placeholder: ="johndoe@gmail.com"
                             Required: =Parent.Required
                             ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                             Value: =Parent.Default
@@ -360,6 +364,7 @@ signUp As screen:
                             FontColor: =
                             Height: =32
                             Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Placeholder: ="123-456-7890"
                             Required: =Parent.Required
                             ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                             Value: =Parent.Default
@@ -407,8 +412,8 @@ signUp As screen:
                         OnChange: =false
                         Text: ="Already have an account?"
                         Width: =162
-                        X: =50
-                        Y: =95
+                        X: =73
+                        Y: =97
                         ZIndex: =2
 
                     FeatureItemButton2_2 As Button:
@@ -423,8 +428,8 @@ signUp As screen:
                         OnSelect: =Navigate('Login Screen')
                         Text: ="Sign in"
                         Width: =76
-                        X: =196
-                        Y: =99
+                        X: =116
+                        Y: =126
                         ZIndex: =8
 
                 DataCardKey22_1 As Text:
@@ -446,6 +451,7 @@ signUp As screen:
                     FontColor: =
                     Height: =32
                     Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                    Placeholder: ="Enter your password"
                     Required: =true
                     ValidationState: =
                     Value: =
