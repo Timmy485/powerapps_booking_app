@@ -130,7 +130,9 @@
                     ZIndex: =7
 
                 "passwordField As 'Text input'":
+                    BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
+                    FontColor: =
                     Height: =32
                     Type: ='TextInputCanvas.Type'.Password
                     Width: =308
