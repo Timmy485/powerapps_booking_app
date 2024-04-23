@@ -85,19 +85,6 @@
                     Y: =376
                     ZIndex: =5
 
-                "passwordField As 'Text box'":
-                    ColorBackground: =
-                    ColorText: =
-                    DisplayMode: =DisplayMode.Edit
-                    Height: =32
-                    Placeholder: ="Enter your password"
-                    Required: =true
-                    Value: =""
-                    Width: =308
-                    X: =0
-                    Y: =404
-                    ZIndex: =6
-
                 Button1 As Button:
                     BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
@@ -141,6 +128,15 @@
                     X: =0
                     Y: =459
                     ZIndex: =7
+
+                "passwordField As 'Text input'":
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =32
+                    Type: ='TextInputCanvas.Type'.Password
+                    Width: =308
+                    X: =0
+                    Y: =404
+                    ZIndex: =9
 
                 Group1 As group:
                     Height: =5

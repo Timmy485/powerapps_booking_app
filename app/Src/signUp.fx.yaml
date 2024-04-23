@@ -94,6 +94,7 @@ signUp As screen:
                             Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                             Placeholder: ="Enter your password"
                             Required: =true
+                            Type: ='TextInputCanvas.Type'.Password
                             ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
                             Value: =
                             Width: =Parent.Width - 48
@@ -453,6 +454,7 @@ signUp As screen:
                     Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                     Placeholder: ="Enter your password"
                     Required: =true
+                    Type: ='TextInputCanvas.Type'.Password
                     ValidationState: =
                     Value: =
                     Width: =Parent.Width - 48
